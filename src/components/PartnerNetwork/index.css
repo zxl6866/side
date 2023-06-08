@@ -1,0 +1,125 @@
+.partnerContainer {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 700px;
+  margin-top: 80px;
+}
+
+
+.partnerContainerBox {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.tltie {
+
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  /* identical to box height, or 58px */
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.slideTltie {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  color: #A9A9A9;
+  height: 40px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  transition: .2s;
+  /* margin-right: 200px; */
+}
+
+.slideTltie:hover {
+  color: #fff;
+}
+
+.slideTltieAfter {
+  color: #fff;
+  transition: 2s;
+}
+
+.slideTltieAfter::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2px;
+  color: #FFFFFF;
+  background-color: #35FFB6;
+  /* 边框颜色 */
+}
+
+.thumbnail {
+  margin-bottom: 50px;
+}
+
+.slideBg {
+  width: 100%;
+  height: 366px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slideBg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.slideBg h5 {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  /* identical to box height, or 36px */
+
+  margin: 50px 0 60px 0;
+  color: #FFFFFF;
+}
+
+.slideBg p {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  width: 470px;
+  color: #EFF4F6;
+  margin-bottom: 60px;
+}
+
+.slideBg a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+
+  background: linear-gradient(93.1deg, #81FFFF -2.22%, #0074FD 125.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+}

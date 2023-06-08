@@ -1,0 +1,120 @@
+.subscriptionContainer {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 200px;
+}
+
+.footerFlex {
+  width: 1240px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 105px;
+}
+
+.footerYoutube,
+.footerTwitter,
+.footerMedium,
+.footerInstagram {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 22px;
+  width: 30px;
+  height: 20px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  opacity: .5;
+}
+
+.footerIcon:hover {
+  opacity: 1;
+}
+
+.footerInstagram {
+  background: url("../../assets/image/subscription/shu.png");
+}
+
+.footerMedium {
+  background: url("../../assets/image/subscription/feiji.png");
+}
+
+.footerTwitter {
+  background: url("../../assets/image/subscription/twitter.png");
+}
+
+.footerYoutube {
+  background: url("../../assets/image/subscription/youtube.png");
+}
+
+.footerText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+
+.footerText:hover {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .subscriptionContainer {
+    height: 800px;
+  }
+
+  .subscriptionFlex {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .subscriptionContent {
+    height: 100%;
+    padding: 0 5%;
+  }
+
+  .subscriptionSlogan {
+    font-size: 30px;
+  }
+
+  .subscriptionText {
+    font-size: 16px;
+  }
+
+  .subscriptionLink {
+    font-size: 16px;
+  }
+
+  .subscriptionInputRightElement {
+    margin-right: 10px;
+  }
+
+  .footerFlex {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .footerLogo {
+    width: 110px;
+    height: 30px;
+  }
+
+  .footerYoutube,
+  .footerTwitter,
+  .footerMedium,
+  .footerInstagram {
+    width: 20px;
+    height: 15px;
+  }
+
+  .footerText {
+    font-size: 10px;
+  }
+
+  .footerSpacer {
+    display: none;
+  }
+}
