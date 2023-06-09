@@ -37,6 +37,12 @@
   height: 40px;
   background: url("../../assets/image/logo.png");
   background-repeat: no-repeat;
+  opacity: .8;
+  transition: .3s;
+}
+
+.headerLogo:hover {
+  opacity: 1;
 }
 
 .headerLink {
