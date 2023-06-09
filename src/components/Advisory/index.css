@@ -40,6 +40,13 @@
   box-shadow: 0 0 20px rgba(116, 247, 255, 0.8);
 }
 
+.advisoryUl li:hover .bg {
+  transform-style: preserve-3d;
+  animation: rotateFan 3s infinite linear;
+  transform-origin: center center;
+}
+
+
 .advisoryUl li p {
   font-family: 'Outfit';
   font-style: normal;
@@ -55,11 +62,7 @@
   margin-left: -33px;
 }
 
-.bg:hover {
-  transform-style: preserve-3d;
-  animation: rotateFan 3s infinite linear;
-  transform-origin: center center;
-}
+
 
 @keyframes rotateFan {
   0% {
