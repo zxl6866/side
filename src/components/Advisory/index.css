@@ -36,9 +36,9 @@
   position: relative;
 }
 
-.advisoryUl li:hover {
+/* .advisoryUl li:hover {
   box-shadow: 0 0 20px rgba(116, 247, 255, 0.8);
-}
+} */
 
 .advisoryUl li:hover .bg {
   transform-style: preserve-3d;
@@ -46,6 +46,14 @@
   transform-origin: center center;
 }
 
+.advisoryUl li:hover .arrow {
+  position: absolute;
+  left: 36px;
+  bottom: 40px;
+  width: 17px;
+  height: 17px;
+  background: url("../../assets/image/advisory/arrowColor.png");
+}
 
 .advisoryUl li p {
   font-family: 'Outfit';
@@ -85,14 +93,14 @@
   cursor: pointer;
 }
 
-.arrow:hover {
+/* .arrow:hover {
   position: absolute;
   left: 36px;
   bottom: 40px;
   width: 17px;
   height: 17px;
   background: url("../../assets/image/advisory/arrowColor.png");
-}
+} */
 
 .advisoryUl li h5 {
   font-family: 'Outfit';

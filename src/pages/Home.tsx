@@ -19,9 +19,9 @@ export function Home() {
       <div id="research">
         <ResearchReport />
       </div>
-      <div>
+      {/* <div>
         <RevolvingDoor />
-      </div>
+      </div> */}
       <div id="advisory">
         <Advisory />
       </div>

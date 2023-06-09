@@ -18,7 +18,7 @@ export function Banner() {
         <Box className="bannerButton">Sign up</Box>
         <Box className="bannerButtomText bannerEmbraceText">
           Embrace SIDE blockchain and
-          <Box className="species" />
+          {/* <Box className="species" /> */}
         </Box>
         <Box className="bannerButtomText">
           Transform possibilities into reality
