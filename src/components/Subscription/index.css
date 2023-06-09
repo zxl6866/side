@@ -14,10 +14,11 @@
   height: 105px;
 }
 
-.footerYoutube,
+.footerGithub,
 .footerTwitter,
 .footerMedium,
-.footerInstagram {
+.footerInstagram,
+.footerM {
   cursor: pointer;
   display: inline-block;
   margin-right: 22px;
@@ -44,8 +45,13 @@
   background: url("../../assets/image/subscription/twitter.png");
 }
 
-.footerYoutube {
-  background: url("../../assets/image/subscription/youtube.png");
+.footerM {
+  background: url("../../assets/image/subscription/m.png");
+  background-size: cover;
+}
+
+.footerGithub {
+  background: url("../../assets/image/subscription/github.png");
 }
 
 .footerText {
@@ -62,7 +68,16 @@
 
 @media screen and (max-width: 768px) {
   .subscriptionContainer {
-    height: 800px;
+    height: 200px;
+  }
+
+  .footerFlex {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 105px;
   }
 
   .subscriptionFlex {

@@ -1,10 +1,21 @@
 .headerContainer {
+  width: 100%;
   background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 }
 
 .headerContent {
   max-width: 1240px;
   margin: 0 auto;
+}
+
+.scroll {
+  /* background: rgba(0, 0, 0, .8) !important; */
+  background-color: transparent;
+  backdrop-filter: blur(6px);
 }
 
 .headerFlex {

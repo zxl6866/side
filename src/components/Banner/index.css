@@ -4,6 +4,8 @@
   width: 100%;
   height: 1000px;
   padding: 80px 5%;
+  margin-top: 100px;
+  overflow: hidden;
 }
 
 .bannerContent {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Divider, Flex, Tooltip } from "@chakra-ui/react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./index.css";
@@ -42,29 +42,51 @@ const explorerTooltip = (data: any) => {
 };
 
 export function Header() {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <Box className="headerContainer animated fadeInRight">
+    <Box
+      className={
+        scroll
+          ? "headerContainer animated fadeInRight scroll"
+          : "headerContainer animated fadeInRight"
+      }
+    >
       <Box className="headerContent">
         <Flex className="headerFlex">
           <Link to={"/"}>
             <Box className="headerLogo" />
           </Link>
           <Box className="headerLinkContainer">
-            <Link to={"/#research"} className="headerLink">
+            <Link to={"/"} className="headerLink">
               Developers
             </Link>
-            <Link to={"/#advisory"} className="headerLink">
+            <Link to={"/"} className="headerLink">
               Individuals
             </Link>
-            <Link to={"/#partner"} className="headerLink">
+            <Link to={"/"} className="headerLink">
               Community
             </Link>
-            <Link to={"/#meetus"} className="headerLink">
+            <Link to={"/"} className="headerLink">
               <Tooltip hasArrow label={explorerTooltip(1)}>
                 Explorer
               </Tooltip>
             </Link>
-            <Link to={"/#meetus"} className="headerLink launchButton">
+            <Link to={"/"} className="headerLink launchButton">
               Launch App
             </Link>
           </Box>

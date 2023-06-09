@@ -18,18 +18,18 @@ export function Subscription() {
             />
             <Box
               className="footerMedium footerIcon"
-              onClick={() => window.open("https://rootzlab.medium.com/")}
+              onClick={() => window.open("https://www.instagram.com/")}
             />
             <Box
               className="footerTwitter footerIcon"
               onClick={() => window.open("https://twitter.com")}
             />
             <Box
-              className="footerYoutube footerIcon"
+              className="footerM footerIcon"
               onClick={() => window.open("https://www.youtube.com/")}
             />
             <Box
-              className="footerYoutube footerIcon"
+              className="footerGithub footerIcon"
               onClick={() => window.open("https://www.youtube.com/")}
             />
           </Box>
