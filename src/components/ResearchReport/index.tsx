@@ -1,13 +1,20 @@
 import React from "react";
 import { Box, Divider, Flex } from "@chakra-ui/react";
+import { debounce } from "lodash";
 import "./index.css";
 import { Carousel, carouselItems } from "./carousel";
 
 export function ResearchReport() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
+  const handleWheel = debounce(event => {
+    const delta = Math.sign(event.deltaY);
+    if (delta > 0) {
+      setCurrentSlide(prevSlide => (prevSlide + 1) % 4);
+    }
+  }, 200);
   return (
     <Box className="researchContainer">
-      <Box className="researchContent">
+      <Box className="researchContent" onWheel={handleWheel}>
         <Box className="moon"></Box>
 
         <Box className="researchContentBox">

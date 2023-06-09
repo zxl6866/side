@@ -1,6 +1,5 @@
 .partnerContainer {
   position: relative;
-  background-color: #000;
   width: 100%;
   height: 700px;
   margin-top: 80px;
@@ -90,7 +89,7 @@
   line-height: 120%;
   /* identical to box height, or 36px */
 
-  margin: 50px 0 60px 0;
+  margin: 40px 0 26px 0;
   color: #FFFFFF;
 }
 
@@ -98,21 +97,20 @@
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 25px;
   text-transform: capitalize;
   width: 470px;
   color: #EFF4F6;
   margin-bottom: 60px;
 }
 
-.slideBg a {
+/* .slideBg a {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  /* identical to box height */
   cursor: pointer;
   text-align: center;
   text-transform: capitalize;
@@ -122,4 +120,31 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
+} */
+
+.partnerNetworkButton {
+  width: 94px;
+  height: 34px;
+  color: #fff;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  /* identical to box height */
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #F2F2F2;
+  line-height: 34px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  cursor: pointer;
+  position: absolute;
+  left: 30px;
+  bottom: 50px;
+}
+
+.partnerNetworkButton:hover {
+  opacity: .8;
 }

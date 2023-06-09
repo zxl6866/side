@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Home } from "./pages/Home";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Canvas from "./components/Canvas/canvas";
 import "./assets/css/animate.min.css";
+import "./App.css";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <ChakraProvider>
+      <Canvas />
       <RouterProvider router={router} />
     </ChakraProvider>
   );

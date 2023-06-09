@@ -1,6 +1,6 @@
 .headerContainer {
   width: 100%;
-  background: #000;
+  background: rgba(0, 0, 0, .4);
   position: fixed;
   left: 0;
   top: 0;
@@ -71,8 +71,7 @@
 }
 
 .launchButton:hover {
-  background: #67d4fd;
-  color: #fff;
+  opacity: .8;
 }
 
 .headerLinkContainer {

@@ -1,6 +1,5 @@
 .portfolioContainer {
   position: relative;
-  background-color: #000;
   width: 100%;
   min-height: 780px;
 }
@@ -13,11 +12,11 @@
 }
 
 .portfolioInnerContainerBg {
-  width: 369px;
+  width: 1444px;
   height: 710px;
-  background: url("../../assets/image/portfolio/moom.png") no-repeat left 20px;
+  background: url("../../assets/image/portfolio/moom.png") no-repeat;
   position: absolute;
-  left: 0;
+  left: -130px;
   top: 0;
   /* animation: blink 1s infinite; */
 }
@@ -40,6 +39,10 @@
   width: 720px;
   height: 100%;
   float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 11;
 }
 
 .portfolioInnerContainerText {
@@ -82,6 +85,5 @@
 }
 
 .portfolioInnerContainerButton:hover {
-  background: #67d4fd;
-  color: #fff;
+  opacity: .8;
 }

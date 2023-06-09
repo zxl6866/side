@@ -1,9 +1,9 @@
 .researchContainer {
   position: relative;
-  background-color: #000;
+  /* background-color: #000; */
   width: 100%;
   height: 900px;
-  padding: 80px;
+  box-sizing: border-box;
 }
 
 .researchContentSildeBox {
@@ -21,14 +21,15 @@
   top: 0;
 }
 
+
 .moon {
   position: absolute;
   left: 49%;
-  bottom: 10%;
+  bottom: 8%;
   width: 22px;
   height: 37px;
   background: url("../../assets/image/research/Vector.png");
-  animation: blink 1s infinite;
+  /* animation: blink 1s infinite; */
 }
 
 @keyframes blink {
@@ -47,7 +48,7 @@
 
 .researchContentBox {
   width: 10px;
-  height: 580px;
+  height: 530px;
   overflow: hidden;
   position: absolute;
 }
@@ -80,11 +81,18 @@
 
 .researUl li {
   width: 100%;
-  height: auto;
+  height: 106px;
   color: #fff;
   margin-bottom: 50px;
   cursor: pointer;
+  transition: .2s;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
 
+.researUl li:hover {
+  padding-top: 2px;
 }
 
 .researUl li h5 {
@@ -103,8 +111,19 @@
   font-size: 14px;
   text-transform: capitalize;
   color: #BDBDBD;
-  transition: .2s;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.5s;
 }
+
+.researUl li:hover p {
+  height: auto;
+  text-overflow: initial;
+  white-space: normal;
+}
+
 
 .researUl li p:hover {
   color: #fff;

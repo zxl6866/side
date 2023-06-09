@@ -87,17 +87,20 @@ export function PartnerNetwork() {
             <div ref={thumbnailRef} className="keen-slider thumbnail">
               <div
                 className="keen-slider__slide slideTltieAfter slideTltie"
-                style={{ marginLeft: "-80px" }}
+                style={{ marginLeft: "-90px" }}
               >
                 Interchain Open Market
               </div>
               <div
                 className="keen-slider__slide slideTltie"
-                style={{ margin: "0 80px 0 100px" }}
+                style={{ margin: "0 80px 0 -100px" }}
               >
                 Mesh Liquidity Network
               </div>
-              <div className="keen-slider__slide slideTltie">
+              <div
+                className="keen-slider__slide slideTltie"
+                style={{ margin: "0 0px 0 -200px" }}
+              >
                 Builders' Mining
               </div>
             </div>
@@ -111,7 +114,7 @@ export function PartnerNetwork() {
                 Result-driven adopt-to-earn mechanism built for Side blockchain
                 to align ecosystem developers’ interests with network growth.
               </p>
-              <a>Read More &gt; </a>
+              <a className="partnerNetworkButton">Read More &gt; </a>
             </div>
             <div className="keen-slider__slide slideBg">
               <img src={bg2} alt="" />
@@ -121,7 +124,7 @@ export function PartnerNetwork() {
                 protocol, a cross-chain liquidity network is created in a
                 distributed, bridgeless and interconnected manner. Read More
               </p>
-              <a>Read More &gt; </a>
+              <a className="partnerNetworkButton">Read More &gt; </a>
             </div>
             <div className="keen-slider__slide slideBg">
               <img src={bg3} alt="" />
@@ -130,7 +133,7 @@ export function PartnerNetwork() {
                 Result-driven adopt-to-earn mechanism built for Side blockchain
                 to align ecosystem developers’ interests with network growth.
               </p>
-              <a>Read More &gt; </a>
+              <a className="partnerNetworkButton">Read More &gt; </a>
             </div>
           </div>
         </Box>

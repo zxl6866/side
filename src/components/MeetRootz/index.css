@@ -28,9 +28,9 @@
 }
 
 .meetRootzBoxArrow {
-  width: 18px;
-  height: 19px;
-  background: url("../../assets/image/advisory/arrowColor.png") no-repeat;
+  width: 26px;
+  height: 26px;
+  background: url("../../assets/image/arrowColor.svg") no-repeat;
   margin-top: 50px;
   cursor: pointer;
 }
