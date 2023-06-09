@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Box, Divider, Flex, Tooltip } from "@chakra-ui/react";
+import { Box, Divider, Flex } from "@chakra-ui/react";
+import { Button, Popover, Tooltip } from "antd";
 import { HashLink as Link } from "react-router-hash-link";
 import "./index.css";
 import bg from "../../assets/image/logo.png";
 
-const explorerTooltip = (data: any) => {
+const explorerTooltip = () => {
   return (
     <Box className="explorerTooltip">
       <Box className="explorerTooltipList">
@@ -82,9 +83,8 @@ export function Header() {
               Community
             </Link>
             <Link to={"/"} className="headerLink">
-              <Tooltip hasArrow label={explorerTooltip(1)}>
-                Explorer
-              </Tooltip>
+              <Popover content={explorerTooltip()}>Explorer</Popover>
+              {/* <Tooltip title={explorerTooltip()}>Explorer</Tooltip> */}
             </Link>
             <Link to={"/"} className="headerLink launchButton">
               Launch App

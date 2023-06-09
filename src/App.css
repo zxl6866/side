@@ -55,3 +55,16 @@ ol {
   background: #0e1729;
   /*画布背景色*/
 }
+
+.ant-popover-inner {
+  background: #171717 !important;
+}
+
+.ant-popover-arrow-content {
+  background: #171717 !important;
+  --antd-arrow-background-color: #171717 !important;
+}
+
+a {
+  color: #fff;
+}

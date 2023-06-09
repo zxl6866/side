@@ -7,14 +7,17 @@ import { Carousel, carouselItems } from "./carousel";
 export function ResearchReport() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const handleWheel = debounce(event => {
+    event.preventDefault(); // 取消默认滚轮事件
+
     const delta = Math.sign(event.deltaY);
     if (delta > 0) {
       setCurrentSlide(prevSlide => (prevSlide + 1) % 4);
     }
   }, 200);
+
   return (
     <Box className="researchContainer">
-      <Box className="researchContent" onWheel={handleWheel}>
+      <Box className="researchContent">
         <Box className="moon"></Box>
 
         <Box className="researchContentBox">

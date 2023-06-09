@@ -50,7 +50,9 @@
 
 .headerLink:hover {
   opacity: 1;
+  color: #fff;
 }
+
 
 .launchButton {
   width: 133px;
@@ -66,16 +68,21 @@
   line-height: 38px;
   /* identical to box height */
   text-align: center;
-  color: #000001;
-  transition: .2s;
+  color: #000000;
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
+
 }
 
 .launchButton:hover {
-  opacity: .8;
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
 }
 
 .headerLinkContainer {
   position: relative;
+  width: 600px;
 }
 
 .headerDropDown {
@@ -93,7 +100,7 @@
   height: auto;
   padding: 20px 10px;
   box-sizing: border-box;
-  background: #2d3748;
+  background: #171717;
 }
 
 .explorerTooltipList {

@@ -65,25 +65,28 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 60px;
   /* identical to box height */
 
   text-align: center;
   text-transform: capitalize;
 
-  color: #000001;
+  color: #fff;
 
-  width: 105px;
-  left: calc(50% - 105px/2 - 4.5px);
-  top: 3759px;
+  width: 203px;
 
-  background: #FFFFFF;
+  background: #000;
   border-radius: 100px;
   cursor: pointer;
+  border: 1px solid #fff;
+
   transition: .2s;
 }
 
 .portfolioInnerContainerButton:hover {
-  opacity: .8;
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+
 }

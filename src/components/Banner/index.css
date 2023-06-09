@@ -27,7 +27,7 @@
 }
 
 .bannerBg1 {
-  height: 938px;
+  height: 945px;
   background: url("../../assets/image/banner/bg1.png") right;
   z-index: 10;
 }
@@ -82,7 +82,7 @@
 }
 
 .bannerButton {
-  width: 238px;
+  width: 203px;
   height: 60px;
   border: 1.5px solid #FFFFFF;
   border-radius: 80px;
@@ -95,13 +95,24 @@
   text-align: center;
   cursor: pointer;
   color: #FFFFFF;
-  transition: .2s;
+
+  background-color: #020202;
+  transition: all 0.3s ease;
 }
 
+.nav-cta-btn:hover {
+  background-color: var(--qubex-white);
+  color: var(--qubex-black);
+  border: 1px solid #020202;
+  transition: all 0.3s ease;
+}
+
+
 .bannerButton:hover {
-  /* background: #67d4fd;
-  color: #fff; */
-  opacity: .8;
+  background-color: #fff;
+  color: #000;
+  border: 1.5px solid #020202;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
