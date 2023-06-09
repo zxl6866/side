@@ -4,13 +4,13 @@ import "./index.css";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-const animation = { duration: 5000, easing: (t: number) => t };
+const animation = { duration: 20000, easing: (t: number) => t };
 
 export function RevolvingDoor() {
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     renderMode: "performance",
-    drag: false,
+    drag: true,
     created(s) {
       s.moveToIdx(1, true, animation);
     },

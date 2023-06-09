@@ -29,8 +29,8 @@
 
 
 .carouselContentImg {
-  animation: spin 8s infinite linear;
-  transform-style: preserve-3d;
+  /* animation: spin 8s infinite linear;
+  transform-style: preserve-3d; */
 }
 
 @keyframes spin {
