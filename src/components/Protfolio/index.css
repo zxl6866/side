@@ -19,7 +19,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  animation: blink 1s infinite;
+  /* animation: blink 1s infinite; */
 }
 
 @keyframes blink {
