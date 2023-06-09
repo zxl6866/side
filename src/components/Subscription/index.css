@@ -46,8 +46,13 @@
 }
 
 .footerM {
+  width: 35px;
+  height: 31px;
   background: url("../../assets/image/subscription/m.png");
   background-size: cover;
+  vertical-align: bottom;
+  /* margin: 0 8px 0 -6px; */
+  margin-left: -9px;
 }
 
 .footerGithub {
