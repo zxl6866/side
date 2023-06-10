@@ -95,6 +95,10 @@
   padding-top: 2px;
 }
 
+.liActive {
+  padding-top: 2px !important;
+}
+
 .researUl li h5 {
   width: 100%;
   font-family: 'Outfit';
@@ -102,6 +106,13 @@
   font-size: 23px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+.active {
+  height: auto !important;
+  color: #fff !important;
+  text-overflow: initial !important;
+  white-space: normal !important;
 }
 
 .researUl li p {

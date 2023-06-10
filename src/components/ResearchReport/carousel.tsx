@@ -6,23 +6,23 @@ import { CarouselItem } from "./CarouselItem";
 
 export const carouselItems = [
   {
-    name: "",
-    url: "",
+    name: "Onchain home for Cosmonauts",
+    text: "Side Is A Secure, Low-Cost, Developer-Friendly Cosmos SDK Based EVM Blockchain Built To Be An Open Ecosystem That Will Bring The Next Billion Users To Web3.",
     pic: "/image/1.png"
   },
   {
-    name: "",
-    url: "",
+    name: "The best of Ethereum with interoperability of Cosmos",
+    text: "Side Is The EVM Equivalent That Enables Developers To Deploy Their Solidity-Based Smart Contracts And Leverage The Scalability And Interoperability Of Cosmos, Ensuring Seamless Compatibility With Existing Code, Tools, And Infrastructure.",
     pic: "/image/2.png"
   },
   {
-    name: "",
-    url: "",
+    name: "Developer-centric ecosystem with massive incentives",
+    text: "An Ecosystem Built To Empower Innovation With Massive Incentives. Unleash Your Creativity And Thrive In A Seamless, Rewarding Blockchain Environment.",
     pic: "/image/3.png"
   },
   {
-    name: "",
-    url: "",
+    name: "Unrivaled Transaction Handling and Scaling",
+    text: "With Single Block Finality And Unrivaled Scalability, The Backbone Of SIDE Enables It To Effortlessly Handle The Transaction Demands Of Thousands Of Protocols And Millions Of Users.",
     pic: "/image/4.png"
   }
 ];

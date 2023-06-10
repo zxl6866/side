@@ -44,7 +44,7 @@ export function Banner() {
           <Typed strings={["Discover the"]} typeSpeed={70} showCursor={false} />
         </Box>
 
-        {renderTypedText(number > 1, ["Unexplored Sidee"], 80, "bannerSlogan")}
+        {renderTypedText(number > 1, ["Unexplored Side"], 80, "bannerSlogan")}
 
         {renderTypedText(
           number > 3,
