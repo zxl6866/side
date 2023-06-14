@@ -8,6 +8,8 @@ import { PortfolioCompanies } from "../components/Protfolio";
 import { MeetRootz } from "../components/MeetRootz";
 import { Subscription } from "../components/Subscription";
 import { RevolvingDoor } from "../components/RevolvingDoor";
+import { Interchain } from "../components/Interchain";
+import { Want } from "../components/Want";
 
 export function Home() {
   return (
@@ -16,20 +18,23 @@ export function Home() {
         <Header />
       </div>
       <Banner />
+      <div id="advisory">
+        <Advisory />
+      </div>
       <div id="research">
         <ResearchReport />
       </div>
       {/* <div>
         <RevolvingDoor />
       </div> */}
-      <div id="advisory">
-        <Advisory />
-      </div>
-      <PartnerNetwork />
+
+      {/* <PartnerNetwork /> */}
+      <Interchain />
       <PortfolioCompanies />
       <div id="meetus">
         <MeetRootz />
       </div>
+      <Want />
       <Subscription />
     </div>
   );

@@ -2,7 +2,8 @@
   position: relative;
   background-color: #000;
   width: 100%;
-  height: 200px;
+  height: 400px;
+  padding-top: 80px;
 }
 
 .footerFlex {
@@ -11,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
   color: white;
-  height: 105px;
+  height: 200px;
 }
 
 .footerGithub,
@@ -60,16 +61,102 @@
 }
 
 .footerText {
-  font-family: "Montserrat";
+  font-family: "Outfit";
   font-size: 14px;
-  opacity: 0.5;
+  position: relative;
 }
 
+.footerWangzhi {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-top: 50px;
+}
 
-.footerText:hover {
+.footerWangzhi:hover {
   opacity: 1;
 }
 
+.arrowRight {
+  width: 24px;
+  height: 24px;
+  background: url(../../assets/image/arrowrRight.png) no-repeat;
+  position: absolute;
+  left: 420px;
+  top: 63px;
+}
+
+.input {
+  width: 476px;
+  height: 59px;
+
+  background: #1B1B1B;
+  border-radius: 12px;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.footerFlex .h3 {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #FFFFFF;
+  margin-top: 0px;
+  opacity: .5;
+  transition: .3s;
+}
+
+.footerText:hover,
+.footerFlex .h3:hover {
+  opacity: 1;
+}
+
+.footerTop {
+  width: 1240px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footerTop h5 {
+  flex: 1;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  align-items: center;
+  letter-spacing: 0.19023px;
+
+  color: #BDD5F2;
+}
+
+.footerTop ul {
+  flex: 1;
+}
+
+.footerTop ul li {
+  float: right;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  margin-right: 60px;
+  /* identical to box height */
+  cursor: pointer;
+  color: #A2A2A2;
+  transition: .6s;
+}
+
+.footerTop ul li:hover {
+  color: #fff;
+}
 
 @media screen and (max-width: 768px) {
   .subscriptionContainer {

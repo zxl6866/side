@@ -88,7 +88,46 @@
 
 .headerLinkContainer {
   position: relative;
-  width: 600px;
+  width: auto;
+}
+
+.disc {
+  cursor: pointer;
+  display: inline-block;
+  background: url("../../assets/image/subscription/disc.png");
+  width: 30px;
+  height: 20px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  opacity: .5;
+  vertical-align: bottom;
+  margin-left: 100px;
+}
+
+.tuite {
+  cursor: pointer;
+  display: inline-block;
+  background: url("../../assets/image/subscription/twitter.png");
+  width: 30px;
+  height: 20px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  opacity: .5;
+  vertical-align: bottom;
+
+}
+
+.github {
+  cursor: pointer;
+  display: inline-block;
+  background: url("../../assets/image/subscription/github.png");
+  width: 30px;
+  height: 20px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  opacity: .5;
+  vertical-align: bottom;
+
 }
 
 .headerDropDown {
@@ -99,6 +138,12 @@
   right: -170px;
   top: 60px;
   z-index: 100;
+}
+
+.disc:hover,
+.tuite:hover,
+.github:hover {
+  opacity: 1;
 }
 
 .explorerTooltip {

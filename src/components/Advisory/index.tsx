@@ -7,7 +7,7 @@ import bg3 from "../../assets/image/advisory/3.png";
 import arrowWhite from "../../assets/image/advisory/arrow.png";
 export function Advisory() {
   return (
-    <Box className="advisoryContainer">
+    <Box className="advisoryContainer animated zoomInLeft">
       <Box className="advisoryTitle">SIDE Blockchain </Box>
       {/* <Box className="advisoryText" marginBottom={40}>
       </Box> */}

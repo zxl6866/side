@@ -84,10 +84,19 @@ export function Header() {
             </Link>
             <Link to={"/"} className="headerLink">
               <Popover content={explorerTooltip()}>Explorer</Popover>
-              {/* <Tooltip title={explorerTooltip()}>Explorer</Tooltip> */}
             </Link>
-            <Link to={"/"} className="headerLink launchButton">
+            {/* <Link to={"/"} className="headerLink launchButton">
               Launch App
+            </Link> */}
+
+            <Link to={"/"} className="headerLink ">
+              <span className="disc"></span>
+            </Link>
+            <Link to={"/"} className="headerLink ">
+              <span className="tuite"></span>
+            </Link>
+            <Link to={"/"} className="headerLink github">
+              <span className="github"></span>
             </Link>
           </Box>
         </Flex>

@@ -46,10 +46,12 @@
   z-index: 11;
 }
 
+
+
 .portfolioInnerContainerText {
   width: 560px;
   height: auto;
-  margin: 180px 0 70px 0;
+  margin: 180px 0 50px 0;
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
@@ -60,6 +62,10 @@
 
   color: #FFFFFF;
 
+}
+
+.portfolioInnerContainerText span {
+  font-weight: 800;
 }
 
 .portfolioInnerContainerButton {
@@ -90,4 +96,10 @@
   background: #fff;
   border: 1px solid #000;
 
+}
+
+.arrows {
+  width: 17px;
+  height: 17px;
+  background: url("../../assets/image/arrow.png") no-repeat;
 }

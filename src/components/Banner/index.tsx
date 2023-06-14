@@ -41,7 +41,7 @@ export function Banner() {
 
       <Box className="bannerContent">
         <Box className="bannerSlogan">
-          <Typed strings={["Discover the"]} typeSpeed={70} showCursor={false} />
+          <Typed strings={["Discover The"]} typeSpeed={70} showCursor={false} />
         </Box>
 
         {renderTypedText(number > 1, ["Unexplored Side"], 80, "bannerSlogan")}
@@ -56,14 +56,21 @@ export function Banner() {
         )}
         {number > 7 ? (
           <>
-            <Box className="bannerButton">Sign up</Box>
-            <Box className="bannerButtomText bannerEmbraceText animated fadeInRight">
+            {/* <Box className="bannerButton">Coming Soon</Box> */}
+            <Box
+              className="button bannerButton  button--rayen button--border-thick button--text-thick animated rollIn"
+              data-text="Coming Soon"
+            >
+              <span>Coming Soon</span>
+            </Box>
+            <Box className="joinCommunity animated rollIn">Join Community</Box>
+            {/* <Box className="bannerButtomText bannerEmbraceText animated fadeInRight">
               Embrace SIDE blockchain and
-              {/* <Box className="species" /> */}
+              <Box className="species" />
             </Box>
             <Box className="bannerButtomText animated fadeInLeft">
               Transform possibilities into reality
-            </Box>
+            </Box> */}
           </>
         ) : null}
       </Box>

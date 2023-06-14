@@ -41,9 +41,13 @@ export function ResearchReport() {
   };
 
   return (
-    <Box className="researchContainer">
+    <Box className="researchContainer animated zoomInLeft">
+      <Box className="title mg">Embrace SIDE blockchain and</Box>
+      <Box className="title">Transform possibilities into reality</Box>
+
       <Box className="researchContent">
         <Box className="moon"></Box>
+        <Box className="moon1"></Box>
 
         <Box className="researchContentBox">
           <Box position="relative" className="researchContentBoxHs">

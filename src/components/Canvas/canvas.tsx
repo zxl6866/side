@@ -21,7 +21,7 @@ export const Canvas = () => {
       canvas.height = window.innerHeight;
       context = canvas.getContext("2d");
       stars = [];
-      stars_count = 400;
+      stars_count = 300;
 
       makeStars();
       interval = setInterval(drawStars, 50); // 控制绘制间隔，调整速度
@@ -37,7 +37,7 @@ export const Canvas = () => {
       for (let i = 0; i < stars_count; i++) {
         const x = Math.random() * canvas.offsetWidth;
         const y = Math.random() * canvas.offsetHeight;
-        const radius = Math.random() * 0.6 + 0.2; // 控制星星大小范围
+        const radius = Math.random() * 1.2 + 0.5; // 控制星星大小范围
         const color = "rgba(255, 255, 255, 0.7)"; // 设置星星的透明度
         const speed = Math.random() * 0.7 + 0.2; // 控制星星移动速度
         const star = { x, y, radius, color, speed };

@@ -6,9 +6,25 @@ import "./index.css";
 export function Subscription() {
   return (
     <Box className="subscriptionContainer">
-      <Divider opacity="0.1" />
+      {/* <Divider opacity="0.1" /> */}
+      <Box className="footerTop">
+        <h5>STAY UP TO DATE</h5>
+        <ul>
+          <li style={{ marginRight: "26px" }}>Explorer</li>
+          <li> Community</li>
+          <li> Individuals</li>
+          <li> Developers</li>
+        </ul>
+      </Box>
       <Flex className="footerFlex">
-        <Box className="footerText">© 2022 Side Labs All Rights Reserved</Box>
+        <Box className="footerText">
+          <Box className="h3">Sign up for newsletter</Box>
+          <input type="text" placeholder="Enter your email" className="input" />
+          <Box className="arrowRight"></Box>
+          <Box className="footerWangzhi">
+            © 2022 Side Labs All Rights Reserved
+          </Box>
+        </Box>
         <Spacer className="footerSpacer" />
         <Box>
           <Box marginBottom="10px">
