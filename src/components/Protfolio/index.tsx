@@ -7,11 +7,11 @@ export function PortfolioCompanies() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollHeight = window.scrollY; // 获取当前滚动位置
-      const targetHeight = 3500; // 指定触发动画的滚动高度
+      const scrollHeight = window.scrollY;
+      const targetHeight = 3500;
 
       if (scrollHeight >= targetHeight) {
-        setAnimate(true); // 设置状态来触发动画
+        setAnimate(true);
       }
     };
 
@@ -20,7 +20,7 @@ export function PortfolioCompanies() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // 空依赖数组确保只注册一次滚动事件
+  }, []);
   return (
     <Box className="portfolioContainer">
       <Box className="portfolioInnerContainer">
