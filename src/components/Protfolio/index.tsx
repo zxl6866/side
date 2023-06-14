@@ -41,9 +41,7 @@ export function PortfolioCompanies() {
             ) : null}
           </Box>
           {/* <Box className="portfolioInnerContainerButton"> Side Labs</Box> */}
-          <Box
-            className={animate ? "arrows animated zoomInLeft" : "arrows"}
-          ></Box>
+          <Box className={animate ? "arrows" : "arrows"}></Box>
         </Box>
       </Box>
     </Box>

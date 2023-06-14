@@ -68,7 +68,7 @@ export function Header() {
       }
     >
       <Box className="headerContent">
-        <Flex className="headerFlex">
+        <Box className="headerFlex">
           <Link to={"/"}>
             <Box className="headerLogo" />
           </Link>
@@ -134,7 +134,7 @@ export function Header() {
               Launch App
             </Link> */}
 
-            <Link to={"/"} className="headerLink ">
+            <Link to={"/"} className="headerLink mag">
               <span className="disc"></span>
             </Link>
             <Link to={"/"} className="headerLink ">
@@ -144,7 +144,7 @@ export function Header() {
               <span className="github"></span>
             </Link>
           </Box>
-        </Flex>
+        </Box>
       </Box>
     </Box>
   );

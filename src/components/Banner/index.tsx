@@ -58,12 +58,17 @@ export function Banner() {
           <>
             {/* <Box className="bannerButton">Coming Soon</Box> */}
             <Box
-              className="bannerButton  button button--rayen button--border-thick button--text-thick animated rollIn"
+              className="bannerButton  button button--rayen button--border-thick button--text-thick animated fadeInLeft"
               data-text="Coming Soon"
             >
               <span>Coming Soon</span>
             </Box>
-            <Box className="joinCommunity animated rollIn">Join Community</Box>
+            <Box
+              className="joinCommunity  button--rayen button--border-thick button--text-thick animated fadeInLeft"
+              data-text="Join Community"
+            >
+              <span>Join Community</span>
+            </Box>
             {/* <Box className="bannerButtomText bannerEmbraceText animated fadeInRight">
               Embrace SIDE blockchain and
               <Box className="species" />

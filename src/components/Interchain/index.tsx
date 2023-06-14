@@ -16,12 +16,12 @@ export function Interchain() {
       const targetHeight = 2200;
       const targetHeight1 = 2500;
 
-      if (scrollHeight >= targetHeight) {
-        setAnimate(true);
-      }
-      if (scrollHeight >= targetHeight) {
-        setAnimate1(true);
-      }
+      // if (scrollHeight >= targetHeight) {
+      //   setAnimate(true);
+      // }
+      // if (scrollHeight >= targetHeight) {
+      //   setAnimate1(true);
+      // }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -39,7 +39,7 @@ export function Interchain() {
         <Box
           className={
             animate
-              ? "InterchainContainerLR animated fadeInLeft"
+              ? "InterchainContainerLR animated rollIn"
               : "InterchainContainerLR"
           }
         >
@@ -71,7 +71,7 @@ export function Interchain() {
         <Box
           className={
             animate1
-              ? "InterchainContainerLR animated fadeInRight"
+              ? "InterchainContainerLR animated rollIn"
               : "InterchainContainerLR"
           }
         >
@@ -100,7 +100,7 @@ export function Interchain() {
         <Box
           className={
             animate
-              ? "InterchainContainerLR animated fadeInLeft"
+              ? "InterchainContainerLR animated rollIn"
               : "InterchainContainerLR"
           }
         >

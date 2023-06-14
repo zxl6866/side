@@ -5,6 +5,8 @@
   left: 0;
   top: 0;
   z-index: 1000;
+  padding-top: 30px;
+  box-sizing: border-box;
 }
 
 .headerContent {
@@ -39,6 +41,12 @@
   background-repeat: no-repeat;
   opacity: 1;
   transition: .3s;
+  float: left;
+  margin-right: 250px;
+}
+
+.mag {
+  margin-left: 128px;
 }
 
 .headerLogo:hover {

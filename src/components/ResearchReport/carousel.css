@@ -30,7 +30,7 @@
 
 .carouselContentImg {
   transform-style: preserve-3d;
-  animation: coolAnimation 5s infinite;
+  /* animation: coolAnimation 5s infinite; */
 }
 
 

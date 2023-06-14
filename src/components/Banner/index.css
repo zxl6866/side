@@ -105,7 +105,7 @@
 .joinCommunity {
   box-sizing: border-box;
 
-  width: 208px;
+  width: 180px;
   height: 44px;
 
   border: 1px solid #2B2B2C;
@@ -118,21 +118,17 @@
   /* identical to box height, or 178% */
   margin: 50px 20px;
   box-sizing: border-box;
-  padding-left: 20px;
   color: #FFFFFF;
   display: inline-block;
   cursor: pointer;
-  background: url(../../assets/image/arrow.svg) no-repeat right;
-  background-position-x: 160px;
+  text-align: center;
+  /* background: url(../../assets/image/arrow.svg) no-repeat right; */
+  /* background-position-x: 160px; */
   /* background-size: 50%; */
+  margin-left: 20px;
 }
 
-.joinCommunity:hover {
-  background: url(../../assets/image/arrowrRight.svg) no-repeat right;
-  /* background: #fff; */
-  /* color: #000; */
-  background-position-x: 160px;
-}
+
 
 
 /* Rayen */
@@ -211,6 +207,13 @@
   transform: translate3d(0, 100%, 0);
 }
 
+
+.joinCommunity:hover {
+  /* background: url(../../assets/image/arrowrRight.svg) no-repeat right; */
+  /* background: #fff; */
+  color: #000;
+  /* background-position-x: 160px; */
+}
 
 
 .nav-cta-btn:hover {
