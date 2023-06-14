@@ -122,13 +122,13 @@
   color: #FFFFFF;
   display: inline-block;
   cursor: pointer;
-  background: url(../../assets/image/arrow.png) no-repeat right;
+  background: url(../../assets/image/arrow.svg) no-repeat right;
   background-position-x: 160px;
   /* background-size: 50%; */
 }
 
 .joinCommunity:hover {
-  background: url(../../assets/image/arrowrRight.png) no-repeat right;
+  background: url(../../assets/image/arrowrRight.svg) no-repeat right;
   /* background: #fff; */
   /* color: #000; */
   background-position-x: 160px;

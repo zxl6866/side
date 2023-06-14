@@ -37,12 +37,13 @@
   height: 40px;
   background: url("../../assets/image/logo.svg");
   background-repeat: no-repeat;
-  opacity: .8;
+  opacity: 1;
   transition: .3s;
 }
 
 .headerLogo:hover {
-  opacity: 1;
+  opacity: .8;
+  /* transform: scale(1.1); */
 }
 
 .headerLink {
@@ -169,6 +170,10 @@
   transition-delay: 0.45s;
 }
 
+.button--nina:hover>span:nth-child(11) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
 
 .launchButton {
   width: 133px;

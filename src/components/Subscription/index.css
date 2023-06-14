@@ -81,7 +81,7 @@
 .arrowRight {
   width: 24px;
   height: 24px;
-  background: url(../../assets/image/arrowrRight.png) no-repeat;
+  background: url(../../assets/image/arrowrRight.svg) no-repeat;
   position: absolute;
   left: 420px;
   top: 63px;
@@ -97,6 +97,7 @@
   padding: 10px 20px;
   box-sizing: border-box;
   transition: .3s;
+  /* border-color: transparent */
 }
 
 .input:hover {

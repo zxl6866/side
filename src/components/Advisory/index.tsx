@@ -4,10 +4,9 @@ import "./index.css";
 import bg1 from "../../assets/image/advisory/1.png";
 import bg2 from "../../assets/image/advisory/2.png";
 import bg3 from "../../assets/image/advisory/3.png";
-import arrowWhite from "../../assets/image/advisory/arrow.png";
 export function Advisory() {
   return (
-    <Box className="advisoryContainer animated zoomInLeft">
+    <Box className="advisoryContainer">
       <Box className="advisoryTitle">SIDE Blockchain </Box>
       {/* <Box className="advisoryText" marginBottom={40}>
       </Box> */}

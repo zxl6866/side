@@ -68,3 +68,9 @@ ol {
 a {
   color: #fff;
 }
+
+/* .ant-input-affix-wrapper .ant-input:focus {
+  border: none !important;
+  border-bottom: 1px solid white !important;
+  box-shadow: none;
+} */

@@ -33,7 +33,7 @@
 
 .meetRootzBoxArrow {
   width: 118px;
-  background: url("../../assets/image/arrow.png") right no-repeat;
+  background: url("../../assets/image/arrow.svg") right no-repeat;
   margin-top: 50px;
   cursor: pointer;
 
@@ -49,7 +49,7 @@
 }
 
 .meetRootzBoxArrow:hover {
-  background: url("../../assets/image/arrowrRight.png") right no-repeat;
+  background: url("../../assets/image/arrowrRight.svg") right no-repeat;
 }
 
 
