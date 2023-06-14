@@ -83,14 +83,14 @@
 
 .bannerButton {
   width: 172px;
-  height: 45px;
+  height: 44px;
   border: 1.5px solid #2b2b2c;
   border-radius: 8px;
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 45px;
+  line-height: 44px;
   margin: 50px 0;
   text-align: center;
   cursor: pointer;
@@ -112,7 +112,7 @@
   border-radius: 8px;
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   line-height: 44px;
   /* identical to box height, or 178% */
@@ -122,12 +122,13 @@
   color: #FFFFFF;
   display: inline-block;
   cursor: pointer;
-  background: url(../../assets/image/arrowrRight.png) no-repeat right;
+  background: url(../../assets/image/arrow.png) no-repeat right;
   background-position-x: 160px;
+  /* background-size: 50%; */
 }
 
 .joinCommunity:hover {
-  background: url(../../assets/image/arrow.png) no-repeat right;
+  background: url(../../assets/image/arrowrRight.png) no-repeat right;
   /* background: #fff; */
   /* color: #000; */
   background-position-x: 160px;
@@ -177,7 +178,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* color: #000001; */
+  color: #000001;
   background: linear-gradient(317.77deg, #FEBCC5 -2.82%, #A1BCDE 66.28%, #50B3B4 136.11%);
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);

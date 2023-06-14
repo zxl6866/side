@@ -1,5 +1,6 @@
 import React, { MutableRefObject, useEffect, useState } from "react";
-import { Box, Button, Divider, Flex, Spacer } from "@chakra-ui/react";
+import Typed from "react-typed";
+import { Box } from "@chakra-ui/react";
 import "./index.css";
 
 export function PortfolioCompanies() {
@@ -8,7 +9,7 @@ export function PortfolioCompanies() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollHeight = window.scrollY;
-      const targetHeight = 3500;
+      const targetHeight = 3800;
 
       if (scrollHeight >= targetHeight) {
         setAnimate(true);
@@ -26,14 +27,18 @@ export function PortfolioCompanies() {
       <Box className="portfolioInnerContainer">
         <Box className="portfolioInnerContainerBg"></Box>
         <Box className="portfolioInnerContainerR">
+          {/* animated zoomInLeft */}
           <Box
             className={
               animate
-                ? "portfolioInnerContainerText animated zoomInLeft"
+                ? "portfolioInnerContainerText"
                 : "portfolioInnerContainerText"
             }
           >
-            The Web3 technology company <br /> born in <span>Cosmos</span>.
+            The Web3 technology company <br /> born in{" "}
+            {animate ? (
+              <Typed strings={["Cosmos"]} typeSpeed={130} showCursor={false} />
+            ) : null}
           </Box>
           {/* <Box className="portfolioInnerContainerButton"> Side Labs</Box> */}
           <Box

@@ -48,6 +48,10 @@
   color: #FFFFFF;
 }
 
+.meetRootzBoxArrow:hover {
+  background: url("../../assets/image/arrowrRight.png") right no-repeat;
+}
+
 
 
 @media screen and (max-width: 768px) {}

@@ -58,7 +58,7 @@ export function Banner() {
           <>
             {/* <Box className="bannerButton">Coming Soon</Box> */}
             <Box
-              className="button bannerButton  button--rayen button--border-thick button--text-thick animated rollIn"
+              className="bannerButton  button button--rayen button--border-thick button--text-thick animated rollIn"
               data-text="Coming Soon"
             >
               <span>Coming Soon</span>

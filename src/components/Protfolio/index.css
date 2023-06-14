@@ -102,4 +102,12 @@
   width: 17px;
   height: 17px;
   background: url("../../assets/image/arrow.png") no-repeat;
+  cursor: pointer;
+}
+
+.arrows:hover {
+  width: 22px;
+  height: 22px;
+  background: url("../../assets/image/arrowrRight.png") no-repeat;
+  background-size: cover;
 }

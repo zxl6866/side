@@ -8,14 +8,19 @@ import "./index.css";
 
 export function Interchain() {
   const [animate, setAnimate] = useState(false);
+  const [animate1, setAnimate1] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollHeight = window.scrollY; // 获取当前滚动位置
-      const targetHeight = 2300; // 指定触发动画的滚动高度
+      const scrollHeight = window.scrollY;
+      const targetHeight = 2200;
+      const targetHeight1 = 2500;
 
       if (scrollHeight >= targetHeight) {
-        setAnimate(true); // 设置状态来触发动画
+        setAnimate(true);
+      }
+      if (scrollHeight >= targetHeight) {
+        setAnimate1(true);
       }
     };
 
@@ -34,7 +39,7 @@ export function Interchain() {
         <Box
           className={
             animate
-              ? "InterchainContainerLR animated rollIn"
+              ? "InterchainContainerLR animated fadeInLeft"
               : "InterchainContainerLR"
           }
         >
@@ -47,7 +52,12 @@ export function Interchain() {
               omnichain asset open market where cross-chain assets are traded
               peer-to-peer without the need to bridge.
             </p>
-            <Box className="InterchainContainerButton">Read More {">"}</Box>
+            <Box
+              className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
+              data-text="Read More >"
+            >
+              <span>Read More {">"}</span>
+            </Box>
           </Box>
           <Box className="InterchainContainerR" style={{ textAlign: "right" }}>
             <img
@@ -60,8 +70,8 @@ export function Interchain() {
 
         <Box
           className={
-            animate
-              ? "InterchainContainerLR animated rollIn"
+            animate1
+              ? "InterchainContainerLR animated fadeInRight"
               : "InterchainContainerLR"
           }
         >
@@ -78,14 +88,19 @@ export function Interchain() {
               Result-Driven Adopt-To-Earn Mechanism Built For Side Blockchain To
               Align Ecosystem Developers Interests With Network Growth.
             </p>
-            <Box className="InterchainContainerButton">Read More {">"}</Box>
+            <Box
+              className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
+              data-text="Read More >"
+            >
+              <span>Read More {">"}</span>
+            </Box>
           </Box>
         </Box>
 
         <Box
           className={
             animate
-              ? "InterchainContainerLR animated rollIn"
+              ? "InterchainContainerLR animated fadeInLeft"
               : "InterchainContainerLR"
           }
         >
@@ -98,7 +113,12 @@ export function Interchain() {
               a cross-chain liquidity network is created in a distributed,
               bridgeless and interconnected manner.
             </p>
-            <Box className="InterchainContainerButton">Read More {">"}</Box>
+            <Box
+              className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
+              data-text="Read More >"
+            >
+              <span>Read More {">"}</span>
+            </Box>
           </Box>
           <Box className="InterchainContainerR" style={{ textAlign: "right" }}>
             <img

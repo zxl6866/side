@@ -73,17 +73,62 @@ export function Header() {
             <Box className="headerLogo" />
           </Link>
           <Box className="headerLinkContainer">
-            <Link to={"/"} className="headerLink">
-              Developers
+            <Link
+              to={"/"}
+              className="headerLink button--nina button--text-thick button--text-upper button--size-s"
+              data-text="Developers"
+            >
+              <span>D</span>
+              <span>e</span>
+              <span>v</span>
+              <span>e</span>
+              <span>l</span>
+              <span>o</span>
+              <span>p</span>
+              <span>e</span>
+              <span>r</span>
+              <span>s</span>
             </Link>
-            <Link to={"/"} className="headerLink">
-              Individuals
+            <Link
+              to={"/"}
+              className="headerLink button--nina button--text-thick button--text-upper button--size-s"
+              data-text="Individuals"
+            >
+              <span>I</span>
+              <span>n</span>
+              <span>d</span>
+              <span>i</span>
+              <span>v</span>
+              <span>i</span>
+              <span>d</span>
+              <span>u</span>
+              <span>a</span>
+              <span>l</span>
+              <span>s</span>
             </Link>
-            <Link to={"/"} className="headerLink">
-              Community
+            <Link
+              to={"/"}
+              className="headerLink headerLink button--nina button--text-thick button--text-upper button--size-s"
+              data-text="Community"
+            >
+              <span>C</span>
+              <span>o</span>
+              <span>m</span>
+              <span>m</span>
+              <span>u</span>
+              <span>n</span>
+              <span>i</span>
+              <span>t</span>
+              <span>v</span>
             </Link>
-            <Link to={"/"} className="headerLink">
-              <Popover content={explorerTooltip()}>Explorer</Popover>
+            <Link
+              to={"/"}
+              className="headerLink headerLink button--nina button--text-thick button--text-upper button--size-s"
+              data-text="Explorer"
+            >
+              <Popover placement="bottom" content={explorerTooltip()}>
+                Explorer
+              </Popover>
             </Link>
             {/* <Link to={"/"} className="headerLink launchButton">
               Launch App

@@ -28,10 +28,12 @@
   background-size: contain !important;
   background-repeat: no-repeat !important;
   opacity: .5;
+  transition: .3s;
 }
 
 .footerIcon:hover {
   opacity: 1;
+  transform: scale(1.2);
 }
 
 .footerInstagram {
@@ -94,6 +96,11 @@
   margin: 10px 0px;
   padding: 10px 20px;
   box-sizing: border-box;
+  transition: .3s;
+}
+
+.input:hover {
+  border: 1px solid #fff;
 }
 
 .footerFlex .h3 {
