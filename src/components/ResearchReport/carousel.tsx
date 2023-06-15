@@ -6,23 +6,23 @@ import { CarouselItem } from "./CarouselItem";
 
 export const carouselItems = [
   {
-    name: "Onchain home for Cosmonauts",
-    text: "Side Is A Secure, Low-Cost, Developer-Friendly Cosmos SDK Based EVM Blockchain Built To Be An Open Ecosystem That Will Bring The Next Billion Users To Web3.",
+    name: "Onchain Home for Web3",
+    text: "SIDE is a cutting-edge, low-cost, developer-friendly Cosmos SDK based EVM blockchain built to be an open ecosystem that will bring the next billion users to web3",
     pic: "/image/1.png"
   },
   {
     name: "The best of Ethereum with interoperability of Cosmos",
-    text: "Side Is The EVM Equivalent That Enables Developers To Deploy Their Solidity-Based Smart Contracts And Leverage The Scalability And Interoperability Of Cosmos, Ensuring Seamless Compatibility With Existing Code, Tools, And Infrastructure.",
+    text: "SIDE unlocks the potential of Solidity-based smart contracts by providing an EVM equivalent. Developers can seamlessly deploy their contracts and tap into the scalability and interoperability offered by Cosmos. It ensures effortless compatibility with existing code, tools, and infrastructure.",
     pic: "/image/2.png"
   },
   {
-    name: "Developer-centric ecosystem with massive incentives",
-    text: "An Ecosystem Built To Empower Innovation With Massive Incentives. Unleash Your Creativity And Thrive In A Seamless, Rewarding Blockchain Environment.",
+    name: "Developer-centric Ecosystem with Incentives",
+    text: "An ecosystem built to empower innovation with result-driven incentives. Unleash your creativity and thrive in a seamless, rewarding blockchain environment",
     pic: "/image/3.png"
   },
   {
     name: "Unrivaled Transaction Handling and Scaling",
-    text: "With Single Block Finality And Unrivaled Scalability, The Backbone Of SIDE Enables It To Effortlessly Handle The Transaction Demands Of Thousands Of Protocols And Millions Of Users.",
+    text: "With unmatched scalability and single-block finality, the backbone of SIDE enables it to effortlessly caters to the transaction demands of the evolving Web3 landscape.",
     pic: "/image/4.png"
   }
 ];

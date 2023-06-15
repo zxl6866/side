@@ -4,40 +4,76 @@ import { Button, Popover, Tooltip } from "antd";
 import { HashLink as Link } from "react-router-hash-link";
 import "./index.css";
 import bg from "../../assets/image/logo.png";
+import bg11 from "../../assets/image/header/1-1.svg";
+import bg12 from "../../assets/image/header/1-2.svg";
+import bg13 from "../../assets/image/header/1-3.svg";
+import bg14 from "../../assets/image/header/1-4.svg";
+import bg21 from "../../assets/image/header/2-1.svg";
+import bg22 from "../../assets/image/header/2-2.svg";
+import bg23 from "../../assets/image/header/2-3.svg";
+import bg31 from "../../assets/image/header/3-1.svg";
 
-const explorerTooltip = () => {
+const popover1 = [
+  {
+    url: bg11,
+    title: "Github",
+    text: "Explore our open source contribution"
+  },
+  {
+    url: bg12,
+    title: "Documentaion",
+    text: "Explore our docs and wiki"
+  },
+  {
+    url: bg13,
+    title: "Validator",
+    text: "Apply to join our validator set"
+  },
+  {
+    url: bg14,
+    title: "Builders Registration",
+    text: "Apply to become of the registered builders"
+  }
+];
+
+const popover2 = [
+  {
+    url: bg21,
+    title: "Blog",
+    text: "Check out the blog contents from us"
+  },
+  {
+    url: bg22,
+    title: "Discord",
+    text: "Explore our global community"
+  },
+  {
+    url: bg23,
+    title: "Twitter",
+    text: "Stay up to date our latest social posts"
+  }
+];
+
+const popover3 = [
+  {
+    url: bg31,
+    title: "Ping Pub",
+    text: "Explore our open source interchain explorer"
+  }
+];
+
+const explorerTooltip = (data: any) => {
   return (
     <Box className="explorerTooltip">
-      <Box className="explorerTooltipList">
-        <img src={bg} alt="" />
-        <Box className="explorerTooltipListText">
-          <h5>Explore Ecosystem</h5>
-          <p>
-            Explore the global network of dApps Access the asset powering the
-            Injective
-          </p>
+      {data.map((item: any, index: number) => (
+        <Box className="explorerTooltipList" key={index}>
+          <img src={item.url} alt="" />
+          <Box className="explorerTooltipListText">
+            <h5>{item.title}</h5>
+            <p>{item.text}</p>
+          </Box>
         </Box>
-      </Box>
-      <Box className="explorerTooltipList">
-        <img src={bg} alt="" />
-        <Box className="explorerTooltipListText">
-          <h5>Explore Ecosystem</h5>
-          <p>
-            Explore the global network of dApps Access the asset powering the
-            Injective
-          </p>
-        </Box>
-      </Box>
-      <Box className="explorerTooltipList">
-        <img src={bg} alt="" />
-        <Box className="explorerTooltipListText">
-          <h5>Explore Ecosystem</h5>
-          <p>
-            Explore the global network of dApps Access the asset powering the
-            Injective
-          </p>
-        </Box>
-      </Box>
+      ))}
     </Box>
   );
 };
@@ -75,10 +111,11 @@ export function Header() {
           <Box className="headerLinkContainer">
             <Link
               to={"/"}
-              className="headerLink button--nina button--text-thick button--text-upper button--size-s"
+              className="headerLink"
+              // className="headerLink button--nina button--text-thick button--text-upper button--size-s"
               data-text="Developers"
             >
-              <span>D</span>
+              {/* <span>D</span>
               <span>e</span>
               <span>v</span>
               <span>e</span>
@@ -87,9 +124,12 @@ export function Header() {
               <span>p</span>
               <span>e</span>
               <span>r</span>
-              <span>s</span>
+              <span>s</span> */}
+              <Popover placement="bottom" content={explorerTooltip(popover1)}>
+                Developers
+              </Popover>
             </Link>
-            <Link
+            {/* <Link
               to={"/"}
               className="headerLink button--nina button--text-thick button--text-upper button--size-s"
               data-text="Individuals"
@@ -105,13 +145,14 @@ export function Header() {
               <span>a</span>
               <span>l</span>
               <span>s</span>
-            </Link>
+            </Link> */}
             <Link
               to={"/"}
-              className="headerLink headerLink button--nina button--text-thick button--text-upper button--size-s"
+              // className="headerLink headerLink button--nina button--text-thick button--text-upper button--size-s"
+              className="headerLink"
               data-text="Community"
             >
-              <span>C</span>
+              {/* <span>C</span>
               <span>o</span>
               <span>m</span>
               <span>m</span>
@@ -119,14 +160,18 @@ export function Header() {
               <span>n</span>
               <span>i</span>
               <span>t</span>
-              <span>v</span>
+              <span>v</span> */}
+              <Popover placement="bottom" content={explorerTooltip(popover2)}>
+                Community
+              </Popover>
             </Link>
             <Link
               to={"/"}
-              className="headerLink headerLink button--nina button--text-thick button--text-upper button--size-s"
+              className="headerLink"
+              // className="headerLink headerLink button--nina button--text-thick button--text-upper button--size-s"
               data-text="Explorer"
             >
-              <Popover placement="bottom" content={explorerTooltip()}>
+              <Popover placement="bottom" content={explorerTooltip(popover3)}>
                 Explorer
               </Popover>
             </Link>
@@ -135,13 +180,31 @@ export function Header() {
             </Link> */}
 
             <Link to={"/"} className="headerLink mag">
-              <span className="disc"></span>
+              <span
+                onClick={() => {
+                  window.open(
+                    "https://discord.com/invite/GN99earcFR",
+                    "_blank"
+                  );
+                }}
+                className="disc"
+              ></span>
             </Link>
             <Link to={"/"} className="headerLink ">
-              <span className="tuite"></span>
+              <span
+                className="tuite"
+                onClick={() => {
+                  window.open("https://twitter.com/SideProtocol", "_blank");
+                }}
+              ></span>
             </Link>
             <Link to={"/"} className="headerLink github">
-              <span className="github"></span>
+              <span
+                className="github"
+                onClick={() => {
+                  window.open("https://github.com/sideprotocol", "_blank");
+                }}
+              ></span>
             </Link>
           </Box>
         </Box>

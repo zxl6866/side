@@ -11,7 +11,11 @@ export function Advisory() {
       {/* <Box className="advisoryText" marginBottom={40}>
       </Box> */}
       <ul className="advisoryUl">
-        <li>
+        <li
+          onClick={() => {
+            window.open("https://docs.tendermint.com/", "_blank");
+          }}
+        >
           <img className="bg" src={bg1} alt="" />
           <h5>Tendermint Core</h5>
           <p>
@@ -20,7 +24,11 @@ export function Advisory() {
           </p>
           <div className="arrow"></div>
         </li>
-        <li>
+        <li
+          onClick={() => {
+            window.open("https://ibc.cosmos.network/", "_blank");
+          }}
+        >
           <img
             className="bg"
             style={{ marginLeft: "-20px" }}
@@ -34,7 +42,11 @@ export function Advisory() {
           </p>
           <div className="arrow"></div>
         </li>
-        <li>
+        <li
+          onClick={() => {
+            window.open("https://docs.cosmos.network/main", "_blank");
+          }}
+        >
           <img className="bg" src={bg3} alt="" />
           <h5>Cosmos SDK</h5>
           <p>

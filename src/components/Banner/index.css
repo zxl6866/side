@@ -37,7 +37,7 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 96px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: white;
 }
 
@@ -116,7 +116,7 @@
   font-size: 18px;
   line-height: 44px;
   /* identical to box height, or 178% */
-  margin: 50px 20px;
+  margin: 50px 0px;
   box-sizing: border-box;
   color: #FFFFFF;
   display: inline-block;
@@ -125,7 +125,7 @@
   /* background: url(../../assets/image/arrow.svg) no-repeat right; */
   /* background-position-x: 160px; */
   /* background-size: 50%; */
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 

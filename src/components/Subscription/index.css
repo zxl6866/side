@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
   color: white;
-  height: 200px;
+  /* height: 200px; */
 }
 
 .footerGithub,
@@ -22,7 +22,7 @@
 .footerM {
   cursor: pointer;
   display: inline-block;
-  margin-right: 22px;
+  margin-left: 30px;
   width: 30px;
   height: 20px;
   background-size: contain !important;
@@ -41,7 +41,7 @@
 }
 
 .footerMedium {
-  background: url("../../assets/image/subscription/feiji.png");
+  background: url("../../assets/image/subscription/disc.png");
 }
 
 .footerTwitter {
@@ -55,7 +55,7 @@
   background-size: cover;
   vertical-align: bottom;
   /* margin: 0 8px 0 -6px; */
-  margin-left: -9px;
+  margin: 0 -6px 0 16px;
 }
 
 .footerGithub {
@@ -72,6 +72,7 @@
   font-size: 12px;
   opacity: 0.5;
   margin-top: 50px;
+  text-align: right;
 }
 
 .footerWangzhi:hover {
@@ -97,11 +98,24 @@
   padding: 10px 20px;
   box-sizing: border-box;
   transition: .3s;
+  /* border: 1px solid #1B1B1B; */
   /* border-color: transparent */
 }
 
 .input:hover {
   border: 1px solid #fff;
+}
+
+.Send {
+  position: absolute;
+  left: 370px;
+  top: 62px;
+  width: 100px;
+  height: 30px;
+  /* background: red; */
+  /* visibility: hidden; */
+  z-index: 1000;
+  cursor: pointer;
 }
 
 .footerFlex .h3 {

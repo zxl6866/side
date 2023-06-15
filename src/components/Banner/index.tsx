@@ -41,10 +41,12 @@ export function Banner() {
 
       <Box className="bannerContent">
         <Box className="bannerSlogan">
-          <Typed strings={["Discover The"]} typeSpeed={70} showCursor={false} />
+          <Typed strings={["Discover"]} typeSpeed={70} showCursor={false} />
         </Box>
 
-        {renderTypedText(number > 1, ["Unexplored Side"], 80, "bannerSlogan")}
+        {renderTypedText(number > 1, ["TheComing"], 80, "bannerSlogan")}
+
+        {renderTypedText(number > 2, ["Unexplored Side"], 80, "bannerSlogan")}
 
         {renderTypedText(
           number > 3,
@@ -57,15 +59,18 @@ export function Banner() {
         {number > 7 ? (
           <>
             {/* <Box className="bannerButton">Coming Soon</Box> */}
-            <Box
+            {/* <Box
               className="bannerButton  button button--rayen button--border-thick button--text-thick animated fadeInLeft"
               data-text="Coming Soon"
             >
               <span>Coming Soon</span>
-            </Box>
+            </Box> */}
             <Box
               className="joinCommunity  button--rayen button--border-thick button--text-thick animated fadeInLeft"
               data-text="Join Community"
+              onClick={() => {
+                window.open("https://discord.com/invite/GN99earcFR", "_blank");
+              }}
             >
               <span>Join Community</span>
             </Box>

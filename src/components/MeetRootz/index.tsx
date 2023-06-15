@@ -39,7 +39,14 @@ export function MeetRootz() {
           <br />
           interoperability
         </Box>
-        <Box className="meetRootzBoxArrow">Read Docs</Box>
+        <Box
+          className="meetRootzBoxArrow"
+          onClick={() => {
+            window.open("https://docs.side.one", "_blank");
+          }}
+        >
+          Read Docs
+        </Box>
       </Box>
     </Box>
   );

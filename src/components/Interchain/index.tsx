@@ -45,16 +45,20 @@ export function Interchain() {
         >
           <Box className="InterchainContainerL">
             <h5 className="InterchainContainerLRTltie">
-              Interchain Open Market
+              Interchain Marketplace
             </h5>
             <p className="InterchainContainerLRP">
-              The Interchain Atomic Swap (IAS) protocol is empowering an
-              omnichain asset open market where cross-chain assets are traded
-              peer-to-peer without the need to bridge.
+              The Interchain Atomic Swap (IAS) protocol is the first scalable
+              atomic swap in the blockchain space. It empowers an omnichain
+              asset open market, enabling peer-to-peer trading across different
+              chains without the need for bridging
             </p>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
               data-text="Read More >"
+              onClick={() => {
+                window.open("https://docs.side.one", "_blank");
+              }}
             >
               <span>Read More {">"}</span>
             </Box>
@@ -83,14 +87,17 @@ export function Interchain() {
             ></img>
           </Box>
           <Box className="InterchainContainerR">
-            <h5 className="InterchainContainerLRTltie">Builders' Mining</h5>
+            <h5 className="InterchainContainerLRTltie">Builderland</h5>
             <p className="InterchainContainerLRP">
-              Result-Driven Adopt-To-Earn Mechanism Built For Side Blockchain To
-              Align Ecosystem Developers Interests With Network Growth.
+              Result-driven adopt-to-earn mechanism built for SIDE blockchain,
+              aligning ecosystem developer interests with network growth.
             </p>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
               data-text="Read More >"
+              onClick={() => {
+                window.open("https://docs.side.one", "_blank");
+              }}
             >
               <span>Read More {">"}</span>
             </Box>
@@ -110,12 +117,15 @@ export function Interchain() {
             </h5>
             <p className="InterchainContainerLRP">
               Utilized by Side’s novel inter-blockchain AMM-based swap protocol,
-              a cross-chain liquidity network is created in a distributed,
+              a onmichain liquidity network is created in a distributed,
               bridgeless and interconnected manner.
             </p>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
               data-text="Read More >"
+              onClick={() => {
+                window.open("https://docs.side.one", "_blank");
+              }}
             >
               <span>Read More {">"}</span>
             </Box>
