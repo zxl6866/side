@@ -37,29 +37,38 @@
 }
 
 .footerInstagram {
-  background: url("../../assets/image/subscription/shu.png");
+  width: 35px;
+  height: 31px;
+  background: url("../../assets/image/subscription/shu.svg");
 }
 
 .footerMedium {
-  background: url("../../assets/image/subscription/disc.png");
+  width: 35px;
+  height: 31px;
+  background: url("../../assets/image/subscription/disc.svg");
 }
 
 .footerTwitter {
-  background: url("../../assets/image/subscription/twitter.png");
+  width: 35px;
+  height: 31px;
+  background: url("../../assets/image/subscription/tuite.svg");
 }
 
 .footerM {
-  width: 35px;
+  width: 32px;
   height: 31px;
-  background: url("../../assets/image/subscription/m.png");
+  background: url("../../assets/image/subscription/m.svg");
   background-size: cover;
   vertical-align: bottom;
   /* margin: 0 8px 0 -6px; */
-  margin: 0 -6px 0 16px;
+  /* margin: -10px -6px 0 16px; */
+  vertical-align: inherit;
 }
 
 .footerGithub {
-  background: url("../../assets/image/subscription/github.png");
+  width: 35px;
+  height: 31px;
+  background: url("../../assets/image/subscription/github.svg");
 }
 
 .footerText {
