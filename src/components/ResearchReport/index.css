@@ -132,7 +132,7 @@
   font-family: 'Outfit';
   font-weight: 400;
   font-size: 23px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: #fff;
 }
 
@@ -149,7 +149,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color: #BDBDBD;
   height: 20px;
   overflow: hidden;

@@ -66,7 +66,7 @@ export function Interchain() {
           <Box className="InterchainContainerR" style={{ textAlign: "right" }}>
             <img
               className="InterchainContainerLRPImg"
-              style={{ margin: "-100px 0 0 70px" }}
+              style={{ margin: "-60px 0 80px 70px" }}
               src={bg2}
             ></img>
           </Box>
@@ -82,7 +82,11 @@ export function Interchain() {
           <Box className="InterchainContainerL">
             <img
               className="InterchainContainerLRPImg"
-              style={{ margin: "-130px 0 0 -70px" }}
+              style={{
+                margin: "-60px 0 80px -70px",
+                width: "467px",
+                height: "306px"
+              }}
               src={bg1}
             ></img>
           </Box>
@@ -133,7 +137,11 @@ export function Interchain() {
           <Box className="InterchainContainerR" style={{ textAlign: "right" }}>
             <img
               className="InterchainContainerLRPImg"
-              style={{ margin: "-100px 0 0 70px" }}
+              style={{
+                margin: "-60px 0 0 70px",
+                width: "383px",
+                height: "345px"
+              }}
               src={bg3}
             ></img>
           </Box>

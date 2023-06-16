@@ -22,7 +22,7 @@
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .InterchainContainerLR {
@@ -92,5 +92,8 @@
 }
 
 .InterchainContainerLRPImg {
+  width: 370px;
+  height: 402px;
   display: inline-block;
+  background-size: cover;
 }

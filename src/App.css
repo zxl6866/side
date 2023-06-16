@@ -80,6 +80,15 @@ input:-webkit-autofill {
   /* background: red !important; */
 }
 
+
+.ant-popover-inner {
+  border-radius: 24px !important;
+}
+
+.ant-popover-inner-content {
+  padding: 0 !important;
+}
+
 /* input {
   border: 0;
   padding: 0;
