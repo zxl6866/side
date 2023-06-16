@@ -60,7 +60,7 @@ export function Interchain() {
                 window.open("https://docs.side.one", "_blank");
               }}
             >
-              <span>Read More {">"}</span>
+              <span>Read More</span>
             </Box>
           </Box>
           <Box className="InterchainContainerR" style={{ textAlign: "right" }}>
@@ -103,7 +103,7 @@ export function Interchain() {
                 window.open("https://docs.side.one", "_blank");
               }}
             >
-              <span>Read More {">"}</span>
+              <span>Read More</span>
             </Box>
           </Box>
         </Box>
@@ -131,7 +131,7 @@ export function Interchain() {
                 window.open("https://docs.side.one", "_blank");
               }}
             >
-              <span>Read More {">"}</span>
+              <span>Read More</span>
             </Box>
           </Box>
           <Box className="InterchainContainerR" style={{ textAlign: "right" }}>
