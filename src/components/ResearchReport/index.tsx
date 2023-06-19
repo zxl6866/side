@@ -7,6 +7,7 @@ import { Carousel, carouselItems } from "./carousel";
 export function ResearchReport() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     startCarousel();
@@ -40,6 +41,14 @@ export function ResearchReport() {
     setCurrentSlide(index);
   };
 
+  useEffect(() => {
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
+
   return (
     <Box className="researchContainer animated zoomInLeft">
       <Box className="title mg">Embrace SIDE blockchain and</Box>
@@ -52,12 +61,22 @@ export function ResearchReport() {
         <Box className="researchContentBox">
           <Box position="relative" className="researchContentBoxHs">
             <Box className="researchSlideStartIndexer" />
-            <Box
-              className="researchSlideCurrentIndexer"
-              style={{
-                top: `${(currentSlide / (carouselItems.length - 1)) * 82}%`
-              }}
-            />
+            {isMobile ? (
+              <Box
+                className="researchSlideCurrentIndexer"
+                style={{
+                  top: `${(currentSlide / (carouselItems.length - 1)) * 49}%`
+                }}
+              />
+            ) : (
+              <Box
+                className="researchSlideCurrentIndexer"
+                style={{
+                  top: `${(currentSlide / (carouselItems.length - 1)) * 80}%`
+                }}
+              />
+            )}
+
             <Divider orientation="vertical" />
           </Box>
         </Box>
@@ -80,6 +99,16 @@ export function ResearchReport() {
                     <p className={index === currentSlide ? "active" : ""}>
                       {item.text}
                     </p>
+                    {isMobile ? (
+                      <img
+                        src={item.pic}
+                        className="researUlImg"
+                        alt=""
+                        style={{
+                          display: index === currentSlide ? "block" : "none"
+                        }}
+                      />
+                    ) : null}
                   </li>
                 ))}
               </ul>

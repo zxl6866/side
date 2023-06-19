@@ -24,6 +24,10 @@
   margin-top: 180px;
 }
 
+.researUlImg {
+  display: none;
+}
+
 .researchContentSildeBox {
   width: 1200px;
   height: 800px;
@@ -143,6 +147,10 @@
   white-space: normal !important;
 }
 
+.researUlImg {
+  display: none;
+}
+
 .researUl li p {
   width: 100%;
   font-family: 'Outfit';
@@ -164,6 +172,9 @@
   white-space: normal;
 }
 
+.moon1 {
+  bottom: -32%;
+}
 
 .researUl li p:hover {
   color: #fff;
@@ -231,23 +242,50 @@
 @media screen and (max-width: 768px) {
   .researchContainer {
     padding: 0 5%;
+    width: 100%;
     height: 900px;
+    /* overflow: hidden; */
   }
 
-  .researchUpperFlex {
-    flex-wrap: wrap;
-  }
-
-  .researchSlogan {
-    font-size: 30px;
-  }
-
-  .researchText {
-    font-size: 18px;
+  .researchContent {
     width: 100%;
   }
 
-  .researchBg {
-    height: 300px;
+  .researchContentSildeBox,
+  .researchContentSildeBoxW,
+  .researchContentClick {
+    width: 100%;
+  }
+
+  .researchContentImg {
+    display: none;
+  }
+
+  .researUl li {
+    padding: 0px 10px;
+    box-sizing: border-box;
+    height: auto;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .mg {
+    /* margin-top: 100px; */
+  }
+
+  .researUlImg {
+    width: 230px;
+    margin: 30px auto;
+    display: block;
+  }
+
+  .researchContentBox {
+    height: 850px;
+  }
+
+  .moon {
+    top: -15%;
   }
 }

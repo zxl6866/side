@@ -21,7 +21,7 @@
   /* identical to box height, or 58px */
   color: #FFFFFF;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 80px;
 }
 
@@ -100,4 +100,64 @@
   height: 402px;
   display: inline-block;
   background-size: cover;
+}
+
+
+.showM {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .InterchainContainer {
+    width: 100%;
+    /* height: 4000px; */
+    margin-top: 400px;
+    margin-bottom: 150px;
+  }
+
+  .tltie {
+    font-size: 26px;
+    font-weight: 700px;
+  }
+
+  .InterchainContainerBox {
+    width: 100%;
+  }
+
+  .showPC {
+    display: none;
+  }
+
+  .showM {
+    display: block;
+  }
+
+  .InterchainContainerLR {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+
+  .InterchainContainerLRTltie {
+    font-size: 20px;
+  }
+
+  .InterchainContainerLRP {
+    font-size: 14px;
+  }
+
+  .InterchainContainerLRP {
+    width: 100%;
+  }
+
+  .InterchainContainerLRPImg {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .InterchainContainerButton {
+    margin: 0 auto;
+    margin-top: 60px;
+    display: block;
+  }
 }

@@ -185,16 +185,66 @@
   transition: .6s;
 }
 
+.ficonP {
+  display: block;
+}
+
+.ficonM {
+  display: none;
+}
+
 .footerTop ul li:hover {
   color: #fff;
 }
 
 @media screen and (max-width: 768px) {
   .subscriptionContainer {
-    height: 200px;
+    height: 380px;
+    padding-top: 60px;
+  }
+
+  .ficonP {
+    display: none;
+  }
+
+  .ficonM {
+    width: 100%;
+    display: block;
+  }
+
+  .footerTop {
+    width: 88%;
   }
 
   .footerFlex {
+    width: 88%;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .footerWangzhi {
+    text-align: center;
+  }
+
+  .footerFlex {
+    display: block !important;
+  }
+
+  .arrowRight {
+    left: 300px;
+  }
+
+  .Send {
+    left: 260px;
+  }
+
+
+
+  /* .footerFlex {
     width: 100%;
     margin: 0 auto;
     align-items: center;
@@ -254,5 +304,5 @@
 
   .footerSpacer {
     display: none;
-  }
+  } */
 }

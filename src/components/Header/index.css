@@ -351,12 +351,27 @@
   color: #BDBDBD;
 }
 
+.open {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .headerLinkContainer {
     display: none;
   }
 
+  .headerContainer {
+    padding-top: 20px;
+  }
+
   .headerFlex {
+    height: 60px;
     justify-content: center;
+  }
+
+  .headerLogo {
+    margin: 0 auto;
+    text-align: center;
+    float: none;
   }
 }

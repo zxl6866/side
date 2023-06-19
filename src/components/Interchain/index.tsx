@@ -39,8 +39,8 @@ export function Interchain() {
         <Box
           className={
             animate
-              ? "InterchainContainerLR animated rollIn"
-              : "InterchainContainerLR"
+              ? "InterchainContainerLR showPC animated rollIn"
+              : "InterchainContainerLR showPC"
           }
         >
           <Box className="InterchainContainerL">
@@ -75,8 +75,8 @@ export function Interchain() {
         <Box
           className={
             animate1
-              ? "InterchainContainerLR animated rollIn"
-              : "InterchainContainerLR"
+              ? "InterchainContainerLR showPC animated rollIn"
+              : "InterchainContainerLR showPC"
           }
         >
           <Box className="InterchainContainerL">
@@ -111,8 +111,8 @@ export function Interchain() {
         <Box
           className={
             animate
-              ? "InterchainContainerLR animated rollIn"
-              : "InterchainContainerLR"
+              ? "InterchainContainerLR showPC animated rollIn"
+              : "InterchainContainerLR showPC"
           }
         >
           <Box className="InterchainContainerL">
@@ -144,6 +144,112 @@ export function Interchain() {
               }}
               src={bg3}
             ></img>
+          </Box>
+        </Box>
+
+        <Box
+          className={
+            animate
+              ? "InterchainContainerLR showM animated rollIn"
+              : "InterchainContainerLR showM"
+          }
+        >
+          <Box className="InterchainContainerL">
+            <h5 className="InterchainContainerLRTltie">
+              Interchain Marketplace
+            </h5>
+            <p className="InterchainContainerLRP">
+              The Interchain Atomic Swap (IAS) protocol is the first scalable
+              atomic swap in the blockchain space. It empowers an omnichain
+              asset open market, enabling peer-to-peer trading across different
+              chains without the need for bridging
+            </p>
+            <img
+              className="InterchainContainerLRPImg"
+              style={{
+                width: "198px",
+                height: "216px"
+              }}
+              src={bg2}
+            ></img>
+            <Box
+              className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
+              data-text="Read More >"
+              onClick={() => {
+                window.open("https://docs.side.one", "_blank");
+              }}
+            >
+              <span>Read More</span>
+            </Box>
+          </Box>
+        </Box>
+
+        <Box
+          className={
+            animate1
+              ? "InterchainContainerLR showM animated rollIn"
+              : "InterchainContainerLR showM"
+          }
+        >
+          <Box className="InterchainContainerR">
+            <h5 className="InterchainContainerLRTltie">Builderland</h5>
+            <p className="InterchainContainerLRP">
+              Result-driven adopt-to-earn mechanism built for SIDE blockchain,
+              aligning ecosystem developer interests with network growth.
+            </p>
+            <img
+              className="InterchainContainerLRPImg"
+              style={{
+                width: "243px",
+                height: "158px"
+              }}
+              src={bg1}
+            ></img>
+            <Box
+              className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
+              data-text="Read More >"
+              onClick={() => {
+                window.open("https://docs.side.one", "_blank");
+              }}
+            >
+              <span>Read More</span>
+            </Box>
+          </Box>
+        </Box>
+
+        <Box
+          className={
+            animate
+              ? "InterchainContainerLR showM animated rollIn"
+              : "InterchainContainerLR showM"
+          }
+        >
+          <Box className="InterchainContainerL">
+            <h5 className="InterchainContainerLRTltie">
+              Mesh Liquidity Network
+            </h5>
+            <p className="InterchainContainerLRP">
+              Utilized by Side’s novel inter-blockchain AMM-based swap protocol,
+              a onmichain liquidity network is created in a distributed,
+              bridgeless and interconnected manner.
+            </p>
+            <img
+              className="InterchainContainerLRPImg"
+              style={{
+                width: "208px",
+                height: "192px"
+              }}
+              src={bg3}
+            ></img>
+            <Box
+              className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
+              data-text="Read More >"
+              onClick={() => {
+                window.open("https://docs.side.one", "_blank");
+              }}
+            >
+              <span>Read More</span>
+            </Box>
           </Box>
         </Box>
       </Box>

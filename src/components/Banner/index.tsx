@@ -41,10 +41,14 @@ export function Banner() {
 
       <Box className="bannerContent">
         <Box className="bannerSlogan">
-          <Typed strings={["Discover"]} typeSpeed={70} showCursor={false} />
+          <Typed
+            strings={["Discover TheComing"]}
+            typeSpeed={70}
+            showCursor={false}
+          />
         </Box>
 
-        {renderTypedText(number > 1, ["TheComing"], 80, "bannerSlogan")}
+        {/* {renderTypedText(number > 1, ["TheComing"], 80, "bannerSlogan")} */}
 
         {renderTypedText(number > 2, ["Unexplored Side"], 80, "bannerSlogan")}
 

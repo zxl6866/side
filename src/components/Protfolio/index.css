@@ -111,3 +111,38 @@
   background: url("../../assets/image/arrowrRight.svg") no-repeat;
   background-size: cover;
 }
+
+
+@media screen and (max-width: 768px) {
+  .portfolioInnerContainer {
+    width: 100%;
+  }
+
+  .portfolioContainer {
+    min-height: 300px !important;
+  }
+
+  .portfolioInnerContainer {
+    height: 300px;
+  }
+
+  .portfolioInnerContainerBg {
+    width: 386px;
+    height: 400px;
+    left: -100px;
+  }
+
+  .portfolioInnerContainerR {
+    width: 88%;
+    margin: 0 auto;
+    float: none;
+    left: 0;
+  }
+
+  .portfolioInnerContainerText {
+    font-size: 19px;
+    width: 100%;
+    margin-top: 118px;
+    margin-bottom: 20px;
+  }
+}

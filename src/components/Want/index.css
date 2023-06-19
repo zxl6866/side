@@ -51,4 +51,29 @@
 
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+  .WantContainer {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin-top: 80px;
+    background: url("../../assets/image/WantBgM.png") no-repeat center #000;
+    background-size: cover;
+  }
+
+  .WantBox {
+    width: 100%;
+
+  }
+
+  .WantText {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 138px;
+  }
+
+  .WantButton {
+    margin: 0 auto;
+  }
+}

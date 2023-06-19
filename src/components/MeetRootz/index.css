@@ -54,4 +54,23 @@
 
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .meetRootzContainer {
+    width: 100%;
+    height: 452px;
+    background: url("../../assets/image/meetRootz/bgM.png") no-repeat center bottom #090909;
+    /* background-size: cover; */
+    margin: 160px 0 0 0;
+  }
+
+  .meetRootzBox {
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  .meetRootzText {
+    /* width: 88%; */
+    font-size: 19px;
+    margin: 20px auto;
+  }
+}
