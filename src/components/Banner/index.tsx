@@ -6,6 +6,15 @@ import "./index.css";
 
 export function Banner() {
   const [number, setNumber] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -39,55 +48,65 @@ export function Banner() {
     <Box className="bannerContainer animated fadeInLeft">
       <Box className="bannerBg1" />
 
-      <Box className="bannerContent">
-        <Box className="bannerSlogan">
-          <Typed
-            strings={["Discover TheComing"]}
-            typeSpeed={70}
-            showCursor={false}
-          />
+      {!isMobile ? (
+        <Box className="bannerContent ">
+          <Box className="bannerSlogan">
+            <Typed
+              strings={["Discover TheComing"]}
+              typeSpeed={70}
+              showCursor={false}
+            />
+          </Box>
+
+          {/* {renderTypedText(number > 1, ["TheComing"], 80, "bannerSlogan")} */}
+
+          {renderTypedText(number > 2, ["Unexplored Side"], 80, "bannerSlogan")}
+
+          {renderTypedText(
+            number > 3,
+            [
+              "Enter the Web of Endless Opportunities and Unleash Limitless Potential"
+            ],
+            40,
+            "bannerText"
+          )}
+          {number > 7 ? (
+            <>
+              <Box
+                className="joinCommunity  button--rayen button--border-thick button--text-thick animated fadeInLeft"
+                data-text="Join Community"
+                onClick={() => {
+                  window.open(
+                    "https://discord.com/invite/GN99earcFR",
+                    "_blank"
+                  );
+                }}
+              >
+                <span>Join Community</span>
+              </Box>
+            </>
+          ) : null}
         </Box>
+      ) : (
+        <Box className="bannerContent ">
+          <Box className="bannerSlogan">Discover TheComing</Box>
+          <Box className="bannerSlogan">Unexplored Side</Box>
+          <Box className="bannerText">
+            Enter the Web of Endless Opportunities and Unleash Limitless
+            Potential
+          </Box>
 
-        {/* {renderTypedText(number > 1, ["TheComing"], 80, "bannerSlogan")} */}
-
-        {renderTypedText(number > 2, ["Unexplored Side"], 80, "bannerSlogan")}
-
-        {renderTypedText(
-          number > 3,
-          [
-            "Enter the Web of Endless Opportunities and Unleash Limitless Potential"
-          ],
-          40,
-          "bannerText"
-        )}
-        {number > 7 ? (
-          <>
-            {/* <Box className="bannerButton">Coming Soon</Box> */}
-            {/* <Box
-              className="bannerButton  button button--rayen button--border-thick button--text-thick animated fadeInLeft"
-              data-text="Coming Soon"
-            >
-              <span>Coming Soon</span>
-            </Box> */}
-            <Box
-              className="joinCommunity  button--rayen button--border-thick button--text-thick animated fadeInLeft"
-              data-text="Join Community"
-              onClick={() => {
-                window.open("https://discord.com/invite/GN99earcFR", "_blank");
-              }}
-            >
-              <span>Join Community</span>
-            </Box>
-            {/* <Box className="bannerButtomText bannerEmbraceText animated fadeInRight">
-              Embrace SIDE blockchain and
-              <Box className="species" />
-            </Box>
-            <Box className="bannerButtomText animated fadeInLeft">
-              Transform possibilities into reality
-            </Box> */}
-          </>
-        ) : null}
-      </Box>
+          <Box
+            className="joinCommunity  button--rayen button--border-thick button--text-thick animated fadeInLeft"
+            data-text="Join Community"
+            onClick={() => {
+              window.open("https://discord.com/invite/GN99earcFR", "_blank");
+            }}
+          >
+            <span>Join Community</span>
+          </Box>
+        </Box>
+      )}
     </Box>
   );
 }

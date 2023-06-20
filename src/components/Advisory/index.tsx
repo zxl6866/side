@@ -9,6 +9,7 @@ import bg3 from "../../assets/image/advisory/3.png";
 
 export function Advisory() {
   const [ref] = useKeenSlider<HTMLElement>({
+    // mode: "free-snap",
     slides: {
       perView: 1.3
       // spacing: 15

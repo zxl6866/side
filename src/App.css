@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   user-select: none;
+
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -87,6 +89,25 @@ input:-webkit-autofill {
 
 .ant-popover-inner-content {
   padding: 0 !important;
+}
+
+
+.input {
+  -webkit-appearance: none;
+  /*解决ios样式问题*/
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  -webkit-touch-callout: none;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
 }
 
 /* input {

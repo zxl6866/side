@@ -65,7 +65,7 @@ export function ResearchReport() {
               <Box
                 className="researchSlideCurrentIndexer"
                 style={{
-                  top: `${(currentSlide / (carouselItems.length - 1)) * 49}%`
+                  top: `${(currentSlide / (carouselItems.length - 1)) * 48}%`
                 }}
               />
             ) : (
