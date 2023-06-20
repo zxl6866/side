@@ -95,14 +95,24 @@ export function Home() {
               />
             </p>
             <div className="sidebarTooltip">
-              <div className="sidebarTooltipList">
+              <div
+                className="sidebarTooltipList"
+                onClick={() => {
+                  window.open("https://github.com/sideprotocol", "_blank");
+                }}
+              >
                 <img src={bg11} alt="" />
                 <div className="sidebarTooltipListText">
                   <h5>Github</h5>
                   <p>Explore our open source contribution</p>
                 </div>
               </div>
-              <div className="sidebarTooltipList">
+              <div
+                className="sidebarTooltipList"
+                onClick={() => {
+                  window.open("https://docs.side.one", "_blank");
+                }}
+              >
                 <img src={bg12} alt="" />
                 <div className="sidebarTooltipListText">
                   <h5>Documentaion</h5>
@@ -112,14 +122,19 @@ export function Home() {
               <div className="sidebarTooltipList">
                 <img src={bg13} alt="" />
                 <div className="sidebarTooltipListText">
-                  <h5>Validator</h5>
+                  <h5>
+                    Validator <span className="comingBg">Coming</span>
+                  </h5>
                   <p>Apply to join our validator set</p>
                 </div>
               </div>
               <div className="sidebarTooltipList">
                 <img src={bg14} alt="" />
                 <div className="sidebarTooltipListText">
-                  <h5>Builders Registration</h5>
+                  <h5>
+                    Builders Registration{" "}
+                    <span className="comingBg">Coming</span>
+                  </h5>
                   <p>Apply to become of the registered builders</p>
                 </div>
               </div>
@@ -148,21 +163,39 @@ export function Home() {
               />
             </p>
             <div className="sidebarTooltip">
-              <div className="sidebarTooltipList">
+              <div
+                className="sidebarTooltipList"
+                onClick={() => {
+                  window.open("https://medium.com/@SideProtocol", "_blank");
+                }}
+              >
                 <img src={bg21} alt="" />
                 <div className="sidebarTooltipListText">
                   <h5>Blog</h5>
                   <p>Check out the blog contents from us</p>
                 </div>
               </div>
-              <div className="sidebarTooltipList">
+              <div
+                className="sidebarTooltipList"
+                onClick={() => {
+                  window.open(
+                    "https://discord.com/invite/GN99earcFR",
+                    "_blank"
+                  );
+                }}
+              >
                 <img src={bg22} alt="" />
                 <div className="sidebarTooltipListText">
                   <h5>Discord</h5>
                   <p>Explore our global community</p>
                 </div>
               </div>
-              <div className="sidebarTooltipList">
+              <div
+                className="sidebarTooltipList"
+                onClick={() => {
+                  window.open("https://twitter.com/SideProtocol", "_blank");
+                }}
+              >
                 <img src={bg23} alt="" />
                 <div className="sidebarTooltipListText">
                   <h5>Twitter</h5>
@@ -194,7 +227,12 @@ export function Home() {
               />
             </p>
             <div className="sidebarTooltip">
-              <div className="sidebarTooltipList">
+              <div
+                className="sidebarTooltipList"
+                onClick={() => {
+                  window.open("https://ping.pub", "_blank");
+                }}
+              >
                 <img src={bg31} alt="" />
                 <div className="sidebarTooltipListText">
                   <h5>Ping Pub</h5>

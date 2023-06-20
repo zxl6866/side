@@ -44,7 +44,7 @@ export function PortfolioCompanies() {
                   : "portfolioInnerContainerText"
               }
             >
-              The Web3 technology company <br /> born in Cosmos
+              The Web3 technology PROJECT <br /> born in Cosmos
             </Box>
           ) : (
             <Box
@@ -54,7 +54,7 @@ export function PortfolioCompanies() {
                   : "portfolioInnerContainerText"
               }
             >
-              The Web3 technology company <br /> born in{" "}
+              The Web3 technology PROJECT <br /> born in{" "}
               {animate ? (
                 <Typed
                   strings={["Cosmos"]}

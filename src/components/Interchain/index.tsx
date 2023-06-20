@@ -122,7 +122,7 @@ export function Interchain() {
             <p className="InterchainContainerLRP">
               Utilized by Side’s novel inter-blockchain AMM-based swap protocol,
               a onmichain liquidity network is created in a distributed,
-              bridgeless and interconnected manner.
+              bridgeless and interconnected manner
             </p>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
@@ -231,7 +231,7 @@ export function Interchain() {
             <p className="InterchainContainerLRP">
               Utilized by Side’s novel inter-blockchain AMM-based swap protocol,
               a onmichain liquidity network is created in a distributed,
-              bridgeless and interconnected manner.
+              bridgeless and interconnected manner
             </p>
             <img
               className="InterchainContainerLRPImg"

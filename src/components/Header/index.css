@@ -334,6 +334,23 @@
 
 }
 
+.comingBg {
+  display: inline-block;
+  width: 54px;
+  height: 22px;
+  background: url("../../assets/image/header/tooltipBg.png") no-repeat;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  text-align: center;
+  line-height: 22px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
 .explorerTooltipListText:hover h5 {
   color: #E8BDCB;
 }

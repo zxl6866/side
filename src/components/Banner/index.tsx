@@ -51,16 +51,12 @@ export function Banner() {
       {!isMobile ? (
         <Box className="bannerContent ">
           <Box className="bannerSlogan">
-            <Typed
-              strings={["Discover TheComing"]}
-              typeSpeed={70}
-              showCursor={false}
-            />
+            <Typed strings={["Discover"]} typeSpeed={70} showCursor={false} />
           </Box>
 
           {/* {renderTypedText(number > 1, ["TheComing"], 80, "bannerSlogan")} */}
 
-          {renderTypedText(number > 2, ["Unexplored Side"], 80, "bannerSlogan")}
+          {renderTypedText(number > 1, ["Unexplored Side"], 80, "bannerSlogan")}
 
           {renderTypedText(
             number > 3,
@@ -89,7 +85,7 @@ export function Banner() {
         </Box>
       ) : (
         <Box className="bannerContent ">
-          <Box className="bannerSlogan">Discover TheComing</Box>
+          <Box className="bannerSlogan">Discover The</Box>
           <Box className="bannerSlogan">Unexplored Side</Box>
           <Box className="bannerText">
             Enter the Web of Endless Opportunities and Unleash Limitless

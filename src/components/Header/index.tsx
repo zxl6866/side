@@ -17,22 +17,28 @@ const popover1 = [
   {
     url: bg11,
     title: "Github",
-    text: "Explore our open source contribution"
+    text: "Explore our open source contribution",
+    openUrl: "https://github.com/sideprotocol"
   },
   {
     url: bg12,
     title: "Documentaion",
-    text: "Explore our docs and wiki"
+    text: "Explore our docs and wiki",
+    openUrl: "https://docs.side.one"
   },
   {
     url: bg13,
     title: "Validator",
-    text: "Apply to join our validator set"
+    text: "Apply to join our validator set",
+    coming: true,
+    openUrl: ""
   },
   {
     url: bg14,
     title: "Builders Registration",
-    text: "Apply to become of the registered builders"
+    text: "Apply to become of the registered builders",
+    coming: true,
+    openUrl: ""
   }
 ];
 
@@ -40,17 +46,20 @@ const popover2 = [
   {
     url: bg21,
     title: "Blog",
-    text: "Check out the blog contents from us"
+    text: "Check out the blog contents from us",
+    openUrl: "https://medium.com/@SideProtocol"
   },
   {
     url: bg22,
     title: "Discord",
-    text: "Explore our global community"
+    text: "Explore our global community",
+    openUrl: "https://discord.com/invite/GN99earcFR"
   },
   {
     url: bg23,
     title: "Twitter",
-    text: "Stay up to date our latest social posts"
+    text: "Stay up to date our latest social posts",
+    openUrl: "https://twitter.com/SideProtocol"
   }
 ];
 
@@ -58,18 +67,32 @@ const popover3 = [
   {
     url: bg31,
     title: "Ping Pub",
-    text: "Explore our open source interchain explorer"
+    text: "Explore our open source interchain explorer",
+    openUrl: "https://ping.pub"
   }
 ];
+
+const openPage = (url: string) => {
+  if (url) window.open(url, "_blank");
+};
 
 const explorerTooltip = (data: any) => {
   return (
     <Box className="explorerTooltip">
       {data.map((item: any, index: number) => (
-        <Box className="explorerTooltipList" key={index}>
+        <Box
+          className="explorerTooltipList"
+          key={index}
+          onClick={() => {
+            openPage(item.openUrl);
+          }}
+        >
           <img src={item.url} alt="" />
           <Box className="explorerTooltipListText">
-            <h5>{item.title}</h5>
+            <h5>
+              {item.title}
+              {item.coming && <span className="comingBg">Coming</span>}
+            </h5>
             <p>{item.text}</p>
           </Box>
         </Box>
