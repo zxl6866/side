@@ -9,7 +9,7 @@
     }
 
     .open {
-        width: 10px;
+        width: 20px;
         height: 16px;
         background: url("../assets/image/m/open.png") no-repeat;
         position: fixed;
