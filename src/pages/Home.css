@@ -35,7 +35,7 @@
         height: auto;
         position: fixed;
         left: 0;
-        bottom: 20px;
+        bottom: 40px;
         z-index: 1000000;
 
     }
@@ -44,6 +44,10 @@
         display: flex;
         justify-content: center;
     }
+
+    /* .sidebarIconBox sapn {
+        margin-right: 30px;
+    } */
 
     .close {
         width: 32px;
@@ -200,7 +204,7 @@
         background-size: contain !important;
         background-repeat: no-repeat !important;
         vertical-align: bottom;
-        /* margin-left: 111px; */
+        margin-left: 0px;
         transition: .3s;
         opacity: 1;
 
