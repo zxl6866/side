@@ -111,7 +111,7 @@ export function Header() {
           <Box className="headerLinkContainer">
             <Link
               to={"/"}
-              className="headerLink"
+              className="headerLink marginL"
               // className="headerLink button--nina button--text-thick button--text-upper button--size-s"
               data-text="Developers"
             >
@@ -149,7 +149,7 @@ export function Header() {
             <Link
               to={"/"}
               // className="headerLink headerLink button--nina button--text-thick button--text-upper button--size-s"
-              className="headerLink"
+              className="headerLink marginL"
               data-text="Community"
             >
               {/* <span>C</span>
@@ -167,7 +167,7 @@ export function Header() {
             </Link>
             <Link
               to={"/"}
-              className="headerLink"
+              className="headerLink marginL"
               // className="headerLink headerLink button--nina button--text-thick button--text-upper button--size-s"
               data-text="Explorer"
             >

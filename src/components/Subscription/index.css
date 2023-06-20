@@ -235,74 +235,11 @@
   }
 
   .arrowRight {
-    left: 300px;
+    left: 320px;
   }
 
   .Send {
     left: 260px;
   }
 
-
-
-  /* .footerFlex {
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    height: 105px;
-  }
-
-  .subscriptionFlex {
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 50px;
-  }
-
-  .subscriptionContent {
-    height: 100%;
-    padding: 0 5%;
-  }
-
-  .subscriptionSlogan {
-    font-size: 30px;
-  }
-
-  .subscriptionText {
-    font-size: 16px;
-  }
-
-  .subscriptionLink {
-    font-size: 16px;
-  }
-
-  .subscriptionInputRightElement {
-    margin-right: 10px;
-  }
-
-  .footerFlex {
-    margin-top: 20px;
-    flex-direction: column-reverse;
-  }
-
-  .footerLogo {
-    width: 110px;
-    height: 30px;
-  }
-
-  .footerYoutube,
-  .footerTwitter,
-  .footerMedium,
-  .footerInstagram {
-    width: 20px;
-    height: 15px;
-  }
-
-  .footerText {
-    font-size: 10px;
-  }
-
-  .footerSpacer {
-    display: none;
-  } */
 }

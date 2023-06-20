@@ -160,4 +160,8 @@
     margin-top: 60px;
     display: block;
   }
+
+  .InterchainContainerButton {
+    background-position-x: 88px;
+  }
 }
