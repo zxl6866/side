@@ -161,6 +161,10 @@
     display: block;
   }
 
+  .tltie {
+    margin-bottom: 40px;
+  }
+
   .InterchainContainerButton {
     background-position-x: 88px;
   }

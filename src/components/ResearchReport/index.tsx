@@ -51,8 +51,19 @@ export function ResearchReport() {
 
   return (
     <Box className="researchContainer animated zoomInLeft">
-      <Box className="title mg">Embrace SIDE blockchain and</Box>
-      <Box className="title">Transform possibilities into reality</Box>
+      {isMobile ? (
+        <>
+          <Box className="title mg">
+            Embrace SIDE
+            <br /> blockchain and Transform <br /> possibilities into reality
+          </Box>
+        </>
+      ) : (
+        <>
+          <Box className="title mg">Embrace SIDE blockchain and</Box>
+          <Box className="title">Transform possibilities into reality</Box>
+        </>
+      )}
 
       <Box className="researchContent">
         <Box className="moon"></Box>

@@ -249,6 +249,7 @@
 
   .researchContent {
     width: 100%;
+    margin-top: 50px;
   }
 
   .researchContentSildeBox,
@@ -272,8 +273,19 @@
 
   }
 
+
   .title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
     font-size: 27px;
+    line-height: 120%;
+    /* or 58px */
+
+    text-align: center;
+    text-transform: none;
+
+    color: #FFFFFF;
   }
 
   .mg {

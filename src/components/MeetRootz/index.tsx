@@ -5,7 +5,7 @@ import "./index.css";
 
 export function MeetRootz() {
   const [animate, setAnimate] = useState(false);
-
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const scrollHeight = window.scrollY;
@@ -22,23 +22,41 @@ export function MeetRootz() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
+
   return (
     <Box className={animate ? "meetRootzContainer" : "meetRootzContainer"}>
       <Box className="meetRootzBox">
-        <Box className="meetRootzText">
-          The future of <br /> interchain
-          <span>
-            {animate ? (
-              <Typed
-                strings={["interchain"]}
-                typeSpeed={150}
-                showCursor={false}
-              />
-            ) : null}
-          </span>{" "}
-          <br />
-          interoperability
-        </Box>
+        {isMobile ? (
+          <Box className="meetRootzText">
+            The future of <br /> interchain
+            <br />
+            interoperability
+          </Box>
+        ) : (
+          <Box className="meetRootzText">
+            The future of <br />
+            <span>
+              {animate ? (
+                <Typed
+                  strings={["interchain"]}
+                  typeSpeed={150}
+                  showCursor={false}
+                />
+              ) : null}
+            </span>
+            <br />
+            interoperability
+          </Box>
+        )}
+
         <Box
           className="meetRootzBoxArrow"
           onClick={() => {

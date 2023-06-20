@@ -199,8 +199,9 @@
 
 @media screen and (max-width: 768px) {
   .subscriptionContainer {
-    height: 380px;
-    padding-top: 60px;
+    height: 390px;
+    padding-top: 40px;
+    background: transparent;
   }
 
   .ficonP {
@@ -216,6 +217,50 @@
     width: 88%;
   }
 
+  .footerInstagram {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/shu.svg");
+  }
+
+  .footerMedium {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/disc.svg");
+  }
+
+  .footerTwitter {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/tuite.svg");
+  }
+
+  .footerM {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/m.svg");
+    background-size: cover;
+    vertical-align: bottom;
+    /* margin: 0 8px 0 -6px; */
+    /* margin: -10px -6px 0 16px; */
+    vertical-align: inherit;
+  }
+
+  .footerGithub {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/github.svg");
+  }
+
+  .footerGithub,
+  .footerTwitter,
+  .footerMedium,
+  .footerInstagram,
+  .footerM {
+    margin-left: 22px;
+    margin-top: 30px;
+  }
+
   .footerFlex {
     width: 88%;
     height: 100px;
@@ -227,6 +272,7 @@
   }
 
   .footerWangzhi {
+    font-size: 14px;
     text-align: center;
   }
 
@@ -235,10 +281,15 @@
   }
 
   .arrowRight {
-    left: 320px;
+    left: 90%;
+  }
+
+  .footerFlex .h3 {
+    opacity: 1;
   }
 
   .Send {
+    /* background: red; */
     left: 260px;
   }
 

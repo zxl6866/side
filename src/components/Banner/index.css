@@ -239,13 +239,15 @@
 
 @media screen and (max-width: 768px) {
   .bannerContent {
-    margin-top: 70px;
+    margin-top: 0px;
   }
 
   .bannerSlogan {
     font-size: 30px;
     line-height: 56px;
-    font-size: 44px;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 10px;
     /* text-align: center; */
   }
 
@@ -256,12 +258,15 @@
   .bannerText {
     font-size: 20px;
     line-height: 24px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 10px;
   }
 
   .joinCommunity {
     width: 86%;
     height: 60px;
-    margin: 180px auto 20px auto;
+    margin: 260px auto 20px auto;
     line-height: 60px;
     display: block;
     color: #000;

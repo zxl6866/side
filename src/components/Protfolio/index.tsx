@@ -5,6 +5,15 @@ import "./index.css";
 
 export function PortfolioCompanies() {
   const [animate, setAnimate] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,19 +36,35 @@ export function PortfolioCompanies() {
       <Box className="portfolioInnerContainer">
         <Box className="portfolioInnerContainerBg"></Box>
         <Box className="portfolioInnerContainerR">
-          {/* animated zoomInLeft */}
-          <Box
-            className={
-              animate
-                ? "portfolioInnerContainerText"
-                : "portfolioInnerContainerText"
-            }
-          >
-            The Web3 technology company <br /> born in{" "}
-            {animate ? (
-              <Typed strings={["Cosmos"]} typeSpeed={130} showCursor={false} />
-            ) : null}
-          </Box>
+          {isMobile ? (
+            <Box
+              className={
+                animate
+                  ? "portfolioInnerContainerText"
+                  : "portfolioInnerContainerText"
+              }
+            >
+              The Web3 technology company <br /> born in Cosmos
+            </Box>
+          ) : (
+            <Box
+              className={
+                animate
+                  ? "portfolioInnerContainerText"
+                  : "portfolioInnerContainerText"
+              }
+            >
+              The Web3 technology company <br /> born in{" "}
+              {animate ? (
+                <Typed
+                  strings={["Cosmos"]}
+                  typeSpeed={130}
+                  showCursor={false}
+                />
+              ) : null}
+            </Box>
+          )}
+
           {/* <Box className="portfolioInnerContainerButton"> Side Labs</Box> */}
           <Box className={animate ? "arrows" : "arrows"}></Box>
         </Box>

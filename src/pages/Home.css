@@ -9,14 +9,15 @@
     }
 
     .open {
-        width: 16px;
-        height: 11px;
+        width: 18px;
+        height: 14px;
         background: url("../assets/image/m/open.png") no-repeat;
         position: fixed;
         top: 30px;
         left: 20px;
         z-index: 10000;
         display: block;
+        background-size: cover;
     }
 
     .sidebar {
@@ -36,6 +37,7 @@
         position: fixed;
         top: 30px;
         left: 20px;
+        background-size: cover;
     }
 
     .sidebarLogo {

@@ -67,7 +67,7 @@
   .WantContainer {
     position: relative;
     width: 100%;
-    height: 260px;
+    height: 233px;
     margin-top: 80px;
     background: url("../../assets/image/WantBgM.png") no-repeat center #000;
     background-size: cover;
@@ -81,7 +81,8 @@
   .WantText {
     font-size: 24px;
     text-align: center;
-    margin-top: 138px;
+    margin-top: 126px;
+    margin-bottom: 20px;
   }
 
   .WantButton {
