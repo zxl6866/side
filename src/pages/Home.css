@@ -9,11 +9,11 @@
     }
 
     .open {
-        width: 20px;
-        height: 16px;
+        width: 26px;
+        height: 17px;
         background: url("../assets/image/m/open.png") no-repeat;
         position: fixed;
-        top: 30px;
+        top: 26px;
         left: 20px;
         z-index: 10000;
         display: block;
