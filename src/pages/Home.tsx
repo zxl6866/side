@@ -34,6 +34,33 @@ export function Home() {
           setOpenSidebar(true);
         }}
       ></div>
+
+      <div
+        className="sidebarIcon"
+        style={{ display: openSidebar ? "block" : "none" }}
+      >
+        <div className="sidebarIconBox">
+          <span
+            onClick={() => {
+              window.open("https://discord.com/invite/GN99earcFR", "_blank");
+            }}
+            className="disc"
+          ></span>
+          <span
+            className="tuite"
+            onClick={() => {
+              window.open("https://twitter.com/SideProtocol", "_blank");
+            }}
+          ></span>
+          <span
+            className="github"
+            onClick={() => {
+              window.open("https://github.com/sideprotocol", "_blank");
+            }}
+          ></span>
+        </div>
+      </div>
+
       <div
         className="sidebar"
         style={{ display: openSidebar ? "block" : "none" }}
@@ -191,7 +218,6 @@ export function Home() {
       {/* <div>
         <RevolvingDoor />
       </div> */}
-
       {/* <PartnerNetwork /> */}
       <Interchain />
       <PortfolioCompanies />

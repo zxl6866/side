@@ -9,11 +9,11 @@
     }
 
     .open {
-        width: 26px;
-        height: 17px;
-        background: url("../assets/image/m/open.png") no-repeat;
+        width: 32px;
+        height: 32px;
+        background: url("../assets/image/m/open.svg") no-repeat;
         position: fixed;
-        top: 26px;
+        top: 22px;
         left: 20px;
         z-index: 10000;
         display: block;
@@ -30,12 +30,27 @@
         z-index: 111111;
     }
 
-    .close {
-        width: 28px;
-        height: 28px;
-        background: url("../assets/image/m/close.png") no-repeat;
+    .sidebarIcon {
+        width: 100%;
+        height: auto;
         position: fixed;
-        top: 23px;
+        left: 0;
+        bottom: 20px;
+        z-index: 1000000;
+
+    }
+
+    .sidebarIconBox {
+        display: flex;
+        justify-content: center;
+    }
+
+    .close {
+        width: 32px;
+        height: 32px;
+        background: url("../assets/image/m/close.svg") no-repeat;
+        position: fixed;
+        top: 22px;
         left: 20px;
         background-size: cover;
     }
@@ -174,4 +189,50 @@
 
         color: #BDBDBD;
     }
+
+
+    .disc {
+        cursor: pointer;
+        display: inline-block;
+        background: url("../assets/image/subscription/disc.svg");
+        width: 34px;
+        height: 34px;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        vertical-align: bottom;
+        /* margin-left: 111px; */
+        transition: .3s;
+        opacity: 1;
+
+    }
+
+    .tuite {
+        cursor: pointer;
+        display: inline-block;
+        background: url("../assets/image/subscription/tuite.svg");
+        width: 34px;
+        height: 34px;
+        margin-left: 30px;
+        opacity: 1;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        vertical-align: bottom;
+        transition: .3s;
+    }
+
+    .github {
+        cursor: pointer;
+        display: inline-block;
+        background: url("../assets/image/subscription/github.svg");
+        width: 34px;
+        height: 34px;
+        margin-left: 30px;
+        opacity: 1;
+
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        vertical-align: bottom;
+        transition: .3s;
+    }
+
 }
