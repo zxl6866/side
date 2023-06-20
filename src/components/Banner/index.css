@@ -239,7 +239,7 @@
 
 @media screen and (max-width: 768px) {
   .bannerContent {
-    margin-top: 0px;
+    margin-top: 16px;
   }
 
   .bannerSlogan {
@@ -252,7 +252,7 @@
   }
 
   .bannerBg1 {
-    height: 880px;
+    height: 900px;
   }
 
   .bannerText {
