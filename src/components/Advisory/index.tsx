@@ -80,7 +80,7 @@ export function Advisory() {
             Best-in-class BFT consensus  engine that tolerates up to ⅓ of
             machines failing arbitrarily
           </p>
-          <div className="arrow"></div>
+          <div className="arrowM"></div>
         </li>
         <li
           onClick={() => {
@@ -99,7 +99,7 @@ export function Advisory() {
             Communicating protocol for relaying arbitrary messages between
             blockchains
           </p>
-          <div className="arrow"></div>
+          <div className="arrowM"></div>
         </li>
         <li
           onClick={() => {
@@ -113,7 +113,7 @@ export function Advisory() {
             Side Hub is a highly secure and scalable blockchain that is built
             using Cosmos SDK
           </p>
-          <div className="arrow"></div>
+          <div className="arrowM"></div>
         </li>
       </ul>
     </Box>

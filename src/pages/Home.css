@@ -31,11 +31,11 @@
     }
 
     .close {
-        width: 18px;
-        height: 18px;
+        width: 28px;
+        height: 28px;
         background: url("../assets/image/m/close.png") no-repeat;
         position: fixed;
-        top: 30px;
+        top: 23px;
         left: 20px;
         background-size: cover;
     }
