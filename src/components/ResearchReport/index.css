@@ -136,7 +136,7 @@
   font-family: 'Outfit';
   font-weight: 400;
   font-size: 23px;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   color: #fff;
 }
 
@@ -173,7 +173,7 @@
 }
 
 .moon1 {
-  bottom: -25%;
+  bottom: -18%;
 }
 
 .researUl li p:hover {

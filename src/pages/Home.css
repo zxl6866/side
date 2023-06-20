@@ -9,8 +9,8 @@
     }
 
     .open {
-        width: 18px;
-        height: 14px;
+        width: 10px;
+        height: 16px;
         background: url("../assets/image/m/open.png") no-repeat;
         position: fixed;
         top: 30px;

@@ -257,7 +257,7 @@
   .footerMedium,
   .footerInstagram,
   .footerM {
-    margin-left: 25px;
+    margin-left: 0px;
     margin-top: 30px;
   }
 
@@ -291,6 +291,11 @@
   .Send {
     /* background: red; */
     left: 260px;
+  }
+
+  .footerIcons {
+    display: flex;
+    justify-content: space-between;
   }
 
 }

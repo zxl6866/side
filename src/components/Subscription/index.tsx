@@ -80,7 +80,7 @@ export function Subscription() {
         </Box>
 
         <Box className="ficonM">
-          <Box marginBottom="10px">
+          <Box marginBottom="10px" className="footerIcons">
             <Box
               className="footerInstagram footerIcon"
               onClick={() =>
