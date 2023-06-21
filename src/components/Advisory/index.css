@@ -35,8 +35,11 @@
   /* border: 1px solid #565656; */
   border-radius: 24px;
   position: relative;
-  /* transition: .6s; */
   background: #161616;
+}
+
+.advisoryUlPC li {
+  transition: .6s;
 }
 
 .advisoryUl li:hover {

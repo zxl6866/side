@@ -20,7 +20,7 @@ export function Advisory() {
       <Box className="advisoryTitle">SIDE Blockchain </Box>
       {/* <Box className="advisoryText" marginBottom={40}>
       </Box> */}
-      <ul className="advisoryUl">
+      <ul className="advisoryUl advisoryUlPC">
         <li
           onClick={() => {
             window.open("https://docs.tendermint.com/", "_blank");
