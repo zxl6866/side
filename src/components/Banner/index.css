@@ -239,7 +239,13 @@
 
 @media screen and (max-width: 768px) {
   .bannerContent {
-    margin-top: 16px;
+    margin-top: 40px;
+  }
+
+  .bannerBg1 {
+    height: 567px;
+    background: url("../../assets/image/m/banner.png") center;
+    z-index: 10;
   }
 
   .bannerSlogan {
@@ -251,8 +257,12 @@
     /* text-align: center; */
   }
 
+  .bannerContainer {
+    height: 1050px;
+  }
+
   .bannerBg1 {
-    height: 900px;
+    height: 800px;
   }
 
   .bannerText {
@@ -266,7 +276,7 @@
   .joinCommunity {
     width: 82%;
     height: 60px;
-    margin: 260px auto 20px auto;
+    margin: 250px auto 20px auto;
     line-height: 60px;
     display: block;
     color: #000;
