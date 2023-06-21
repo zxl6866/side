@@ -9,11 +9,11 @@
     }
 
     .open {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
         background: url("../assets/image/m/open.svg") no-repeat;
         position: fixed;
-        top: 22px;
+        top: 24px;
         left: 20px;
         z-index: 10000;
         display: block;
@@ -50,11 +50,11 @@
     } */
 
     .close {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
         background: url("../assets/image/m/close.svg") no-repeat;
         position: fixed;
-        top: 22px;
+        top: 24px;
         left: 20px;
         background-size: cover;
     }

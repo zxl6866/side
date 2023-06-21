@@ -51,7 +51,11 @@ export function Banner() {
       {!isMobile ? (
         <Box className="bannerContent ">
           <Box className="bannerSlogan">
-            <Typed strings={["Discover"]} typeSpeed={70} showCursor={false} />
+            <Typed
+              strings={["Discover the"]}
+              typeSpeed={70}
+              showCursor={false}
+            />
           </Box>
 
           {/* {renderTypedText(number > 1, ["TheComing"], 80, "bannerSlogan")} */}
