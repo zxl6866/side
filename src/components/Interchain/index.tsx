@@ -55,7 +55,7 @@ export function Interchain() {
             </p>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
-              data-text="Read More >"
+              data-text="Read More"
               onClick={() => {
                 window.open("https://docs.side.one", "_blank");
               }}
@@ -98,7 +98,7 @@ export function Interchain() {
             </p>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
-              data-text="Read More >"
+              data-text="Read More"
               onClick={() => {
                 window.open("https://docs.side.one", "_blank");
               }}
@@ -126,7 +126,7 @@ export function Interchain() {
             </p>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
-              data-text="Read More >"
+              data-text="Read More"
               onClick={() => {
                 window.open("https://docs.side.one", "_blank");
               }}
@@ -174,7 +174,7 @@ export function Interchain() {
             ></img>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
-              data-text="Read More >"
+              data-text="Read More"
               onClick={() => {
                 window.open("https://docs.side.one", "_blank");
               }}
@@ -207,7 +207,7 @@ export function Interchain() {
             ></img>
             <Box
               className="InterchainContainerButton button button--rayen button--border-thick button--text-thick"
-              data-text="Read More >"
+              data-text="Read More"
               onClick={() => {
                 window.open("https://docs.side.one", "_blank");
               }}

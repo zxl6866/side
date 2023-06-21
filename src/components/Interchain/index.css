@@ -84,8 +84,8 @@
   border: 0.5px solid #FFFFFF;
   border-radius: 8px;
   cursor: pointer;
-  background: url("../../assets/image/moreArrow.png") no-repeat right;
-  background-position-x: 83px;
+  /* background: url("../../assets/image/moreArrow.png") no-repeat right; */
+  /* background-position-x: 83px; */
 }
 
 .InterchainContainerButton:hover {
