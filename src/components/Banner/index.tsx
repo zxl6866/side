@@ -52,7 +52,7 @@ export function Banner() {
         <Box className="bannerContent ">
           <Box className="bannerSlogan">
             <Typed
-              strings={["Discover the"]}
+              strings={["Discover The"]}
               typeSpeed={70}
               showCursor={false}
             />
